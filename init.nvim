@@ -1,0 +1,19 @@
+set nocp
+filetype plugin on
+set path+=**
+set nu
+set sw=4
+set tabstop=4
+set expandtab
+set ai
+set mouse=a
+set ic
+syntax on
+set hlsearch
+set nowrap
+
+:nmap <silent> ;e :NERDTree<CR>
+
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+call plug#end()
