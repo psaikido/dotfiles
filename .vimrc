@@ -1,11 +1,10 @@
+set nocp
 set nu
-set sw=4
-set tabstop=4
-set expandtab
+set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
 set ai
 set mouse=a
 set ic
-syntax on
+syntax on 
 set hlsearch
 set nowrap
 
@@ -16,4 +15,11 @@ set nowrap
 "find any line with whitespace, 'function' and a '{' at the end, select that
 "line, go to the end and match the brace, then fold it
 :nmap <silent> ;f :g:^\s*function.*{$:exe "norm V$%zf"<CR>
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+
 
