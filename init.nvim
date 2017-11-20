@@ -1,19 +1,13 @@
 set nocp
-filetype plugin on
-set path+=**
-set nu
-set sw=4
-set tabstop=4
-set expandtab
 set ai
-set mouse=a
-set ic
-syntax on
-set hlsearch
-set nowrap
+set number 
+syntax enable
+set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
+:map ;e :NERDTree<CR>
 
-:nmap <silent> ;e :NERDTree<CR>
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
 
-call plug#begin('~/.local/share/nvim/plugged')
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-call plug#end()
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+
