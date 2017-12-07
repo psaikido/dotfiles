@@ -2,8 +2,11 @@ set nocp
 set ai
 set number 
 syntax enable
-set tabstop=4 softtabstop=4 expandtab shiftwidth=4 smarttab
-:map ;e :NERDTree<CR>
+set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
+set mouse=a
+
+:map <silent> ;e :NERDTree<CR>
+:nmap <silent> ;n :NERDTreeFind<CR>
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -11,3 +14,4 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 
+colorscheme industry
