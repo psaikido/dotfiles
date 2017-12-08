@@ -1,5 +1,5 @@
 set nocp
-set rnu
+set nu rnu
 set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
 set ai
 set mouse=a
@@ -8,8 +8,8 @@ syntax on
 set hlsearch
 set nowrap
 
-:map <silent> ;e :NERDTree<CR>
-:nmap <silent> ;s :NERDTreeFind<CR>
+:map ;e :NERDTree<CR>
+:nmap ;s :NERDTreeFind<CR>
 
 "git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
 set rtp+=~/.config/nvim/bundle/Vundle.vim/
