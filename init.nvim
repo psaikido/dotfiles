@@ -1,17 +1,22 @@
 set nocp
-set ai
-set number 
-syntax enable
+set rnu
 set tabstop=2 softtabstop=2 expandtab shiftwidth=2 smarttab
+set ai
 set mouse=a
+set ic
+syntax on 
+set hlsearch
+set nowrap
 
 :map <silent> ;e :NERDTree<CR>
-:nmap <silent> ;n :NERDTreeFind<CR>
+:nmap <silent> ;s :NERDTreeFind<CR>
 
-set rtp+=~/.vim/bundle/vundle/
+"git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
+set rtp+=~/.config/nvim/bundle/Vundle.vim/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
+"Then go :PluginInstall to get the plugins.
 
 colorscheme industry
