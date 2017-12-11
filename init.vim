@@ -8,11 +8,18 @@ syntax on
 set hlsearch
 set nowrap
 
-:map ;e :NERDTree<CR>
-:nmap ;s :NERDTreeFind<CR>
+let g:mapleader = ";"
+map <Leader>e :NERDTree<CR>
+nmap <Leader>s :NERDTreeFind<CR>
+nmap <Leader>t :te<CR>
+tnoremap <Esc> <C-\><C-n>
 
 "git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
-set rtp+=~/.config/nvim/bundle/Vundle.vim/
+
+"Linux
+"set rtp+=~/.config/nvim/bundle/Vundle.vim/
+"Mac
+set rtp+=~/.config/nvim/bundle/Vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
