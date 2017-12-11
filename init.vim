@@ -7,23 +7,28 @@ set ic
 syntax on 
 set hlsearch
 set nowrap
+colorscheme industry
+filetype off
 
+" Key mappings
 let g:mapleader = ";"
 map <Leader>e :NERDTree<CR>
 nmap <Leader>s :NERDTreeFind<CR>
 nmap <Leader>t :sp <Bar> te<CR><C-w><C-r>
 tnoremap <Esc> <C-\><C-n>
 
-"git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
 
+"Plugins
+"git clone https://github.com/VundleVim/Vundle.vim.git ~/.config/nvim/bundle/Vundle.vim
 "Linux
 set rtp+=~/.config/nvim/bundle/Vundle.vim/
 "Mac
 "set rtp+=~/.config/nvim/bundle/Vundle/
-call vundle#rc()
-
+call vundle#begin()
 Bundle 'gmarik/vundle'
 Bundle 'scrooloose/nerdtree'
 "Then go :PluginInstall to get the plugins.
+call vundle#end()
 
-colorscheme industry
+filetype plugin indent on 
+
