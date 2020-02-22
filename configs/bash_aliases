@@ -1,0 +1,12 @@
+alias ll='ls -lh'
+
+cdl() {
+  cd "$1"
+  ls -lh
+}
+
+alias vi='nvim'
+alias cds='cd ~/sites/'
+alias cdc='cd ~/sites/chanadmin/'
+alias cdf='cd ~/sites/carrollonline.uk/family.react/fam'
+
