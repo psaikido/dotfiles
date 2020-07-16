@@ -6,7 +6,6 @@ cdl() {
 }
 
 alias vi='nvim'
-alias cds='cd ~/sites/'
 alias cdc='cd ~/sites/chanadmin/'
-alias cdf='cd ~/sites/carrollonline.uk/family.react/fam'
+alias cdu='cd ~/sites/carrollonline.uk/carrollonline'
 
