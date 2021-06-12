@@ -112,6 +112,7 @@ export PATH="~/npm/bin:$PATH"
 export NODE_PATH="~/npm/lib/node_modules"
 export PATH="$PATH:/home/hughie/sites/chanadmin/public/vendor/bin"
 export PATH="$PATH:/home/hughie/lyftrak/node_modules/.bin"
+export PATH="$PATH:/home/hughie/.nvm/versions/node/v13.5.0/bin"
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$HOME/gems"
