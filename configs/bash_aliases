@@ -7,5 +7,5 @@ cdl() {
 
 alias vi='nvim'
 alias cdc='cd ~/sites/chanadmin/'
-alias cdu='cd ~/sites/carrollonline.uk/'
+alias cdh='cd ~/sites/hugle.co.uk/hugle/'
 
