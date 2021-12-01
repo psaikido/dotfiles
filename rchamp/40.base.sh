@@ -1,10 +1,7 @@
 #!/bin/bash
 
 pacman -Syyy 
-pacman -S grub networkmanager network-manager-applet dialog base-devel linux-headers alsa-utils pulseaudio git reflector xdg-utils xdg-user-dirs openssh sudo
-
-grub-install --target=i386-pc /dev/sda
-grub-mkconfig -o /boot/grub/grub.cfg
+pacman -S grub efibootmgr networkmanager network-manager-applet dialog mtools dosfstools base-devel linux-headers bluez bluez-utils cups alsa-utils pulseaudio pulseaudio-bluetooth git reflector xdg-utils xdg-user-dirs  
 
 systemctl enable NetworkManager
 systemctl enable sshd
