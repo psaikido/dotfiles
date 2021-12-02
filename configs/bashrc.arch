@@ -5,8 +5,21 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+case "$TERM" in
+    xterm-color) color_prompt=yes;;
+esac
+
+if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+# We have color support; assume it's compliant with Ecma-48
+# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+# a case would tend to support setf rather than setaf.)
+    color_prompt=yes
+    else
+    color_prompt=
+fi
+
 RED="\[\033[0;31m\]"
-GREEN="\[\033[0;32m\]"
+GREEN="\[\033[01;32m\]"
 YELLOW="\[\033[0;33m\]"
 BLUE="\[\033[0;34m\]"
 PURPLE="\[\033[0;35m\]"
@@ -16,12 +29,19 @@ parse_git_branch() {
  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-PS1="$WHITE\u@\h:\W$(parse_git_branch) "
+if [ "$color_prompt" = yes ]; then
+ PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\$ '
+else
+ PS1='\u@\h:\W$(parse_git_branch)\$ '
+fi
 
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto --group-directories-first'
 alias vi='nvim'
 alias rn='ranger'
+alias cdc='cd ~/public_html/chanadmin/'
+alias cdh='cd ~/sites/hugle.co.uk/hugle'
+
 export EDITOR=nvim
 export TERMINAL=alacritty
 neofetch
