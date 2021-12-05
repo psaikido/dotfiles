@@ -1,0 +1,15 @@
+#! /bin/bash
+
+posX=$(($BLOCK_X - $WIDTH / 2 + 40))
+posY=$(($BLOCK_Y - $HEIGHT + 100))
+
+action=$(yad --title "wallpapers" \
+    --form \
+    --width=$WIDTH --height=$HEIGHT \
+    --undecorated --fixed \
+    --close-on-unfocus --no-buttons \
+    --posx=$posX --posy=$posY \
+    --field="change wallpaper":BTN "bash -c /home/hughie/bin/bkg.sh; kill yad" \
+    --field="add2faves":BTN "bash -c /home/hughie/bin/bkg-faves.sh kill yad" \
+)
+
