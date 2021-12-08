@@ -1,7 +1,7 @@
 configuration {
-    modi: "window,drun,run,combi,filebrowser";
+    modi: "window,drun,run,combi,filebrowser,ssh";
     font: "hack 10";
-    combi-modi: [window,drun,run,filebrowser];
+    combi-modi: [window,drun,run,filebrowser,ssh];
     sidebar-mode: true;
 
     timeout {
