@@ -9,7 +9,7 @@ action=$(yad --title "wallpapers" \
     --undecorated --fixed \
     --close-on-unfocus --no-buttons \
     --posx=$posX --posy=$posY \
-    --field="change wallpaper":BTN "bash -c /home/hughie/bin/bkg.sh; kill yad" \
-    --field="add2faves":BTN "bash -c /home/hughie/bin/bkg-faves.sh kill yad" \
+    --field="change wallpaper":BTN "bash -c $SCRIPT_DIR/bkg.sh; kill yad" \
+    --field="add2faves":BTN "bash -c $SCRIPT_DIR/bkg-faves.sh kill yad" \
 )
 
