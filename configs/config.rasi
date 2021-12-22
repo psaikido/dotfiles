@@ -1,7 +1,7 @@
 configuration {
-    modi: "window,drun,run,combi,filebrowser,ssh";
+    modi: "drun,run";
+    combi-modi: [drun,run];
     font: "hack 10";
-    combi-modi: [window,drun,run,filebrowser,ssh];
     sidebar-mode: true;
 
     timeout {
@@ -13,10 +13,14 @@ configuration {
       directories-first: true;
       sorting-method:    "name";
     }
+
+	terminal: "st";
+
 }
 
 //@theme "/usr/share/rofi/themes/Monokai.rasi"
 //@theme "/usr/share/rofi/themes/fancy.rasi"
 //@theme "/usr/share/rofi/themes/solarized.rasi"
 //@theme "/usr/share/rofi/themes/sidebar.rasi"
-@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+@theme "/usr/share/rofi/themes/solarized_alternate.rasi"
