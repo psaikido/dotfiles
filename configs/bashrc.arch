@@ -37,12 +37,13 @@ alias cdh='cd ~/sites/hugle.co.uk/hugle'
 alias jj='nvim /data/crypt/journal/journal.lft'
 
 export EDITOR=nvim
-export TERMINAL=st
+export TERMINAL=alacritty
 export BROWSER=brave
 export i3_script_dir='/data/dotfiles/i3block-scripts'
+export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # fuzzy finder
-export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 source /usr/share/fzf/completion.bash
 source /usr/share/fzf/key-bindings.bash
 export FZF_DEFAULT_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null ||
