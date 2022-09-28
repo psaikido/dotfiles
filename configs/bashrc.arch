@@ -30,11 +30,15 @@ fi
 
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto --group-directories-first'
+alias la='ls -lha --color=auto --group-directories-first'
 alias vi='nvim'
 alias rn='ranger'
 alias cdc='cd ~/public_html/chanadmin/'
 alias cdh='cd ~/sites/hugle.co.uk/hugle'
 alias jj='nvim /data/crypt/journal/journal.lft'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 export EDITOR=nvim
 export TERMINAL=alacritty
@@ -51,7 +55,12 @@ cat {} || tree -C {}) 2> /dev/null | head -200'"
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/.local/share/gem/ruby/3.0.0/bin"
 export PATH="$PATH:$HOME/tools/nvim-linux64/bin"
 
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
+
 xwallpaper --maximize $HOME/.config/wallpaper.png
+
+# vim mode on the command line
+set -o vi
