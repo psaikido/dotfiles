@@ -32,7 +32,6 @@ fi
 
 # HC
 eval $(ssh-agent)
-#exec i3
 
 # uk keymap
 setxkbmap gb &
@@ -40,17 +39,9 @@ setxkbmap gb &
 # compositor
 picom -f &
 
-# hot start dwm
-#while true; do
-#    dwm >/dev/null 2>&1
-#done
-
 # wallpaper
 xwallpaper --maximize $HOME/.config/wallpaper.png &
 
-# dwm status bar
-#dwmstatus 2>&1 >/dev/null & 
-#/home/hughie/tools/dwn-bar/dwm_bar.sh &
 
+#exec i3
 #exec dwm
-exec i3
