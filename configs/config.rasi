@@ -1,7 +1,7 @@
 configuration {
     modi: "drun,run";
     combi-modi: [drun,run];
-    font: "hack 10";
+    font: "sans-serif 14";
     sidebar-mode: true;
 
     timeout {
