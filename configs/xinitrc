@@ -42,16 +42,4 @@ picom -f &
 # wallpaper
 xwallpaper --maximize $HOME/.config/wallpaper.png &
 
-#exec i3
-#exec dwm 
-
-while true; do
-		dwmblocks
-    	sleep 2
-done &
-
-while true; do
-	dwm >/dev/null
-	# to log stderrors to a file
-	# dwm 2> ~/Build/dwm/dwm.log
-done
+exec i3
