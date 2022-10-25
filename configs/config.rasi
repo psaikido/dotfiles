@@ -14,7 +14,7 @@ configuration {
       sorting-method:    "name";
     }
 
-	terminal: "st";
+	terminal: "alacritty";
 
 }
 
