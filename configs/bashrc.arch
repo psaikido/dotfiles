@@ -34,12 +34,14 @@ alias la='ls -lha --color=auto --group-directories-first'
 alias vi='nvim'
 alias rn='ranger'
 alias cdc='cd ~/public_html/chanadmin/'
-alias cdh='cd ~/sites/hugle.co.uk/hugle'
+alias cdh='cd ~/sites/hugle.uk'
 alias jj='nvim /data/crypt/journal/journal.lft'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=nvim
 export TERMINAL=alacritty
 export BROWSER=brave
@@ -58,7 +60,7 @@ export PATH="$PATH:$HOME/.local/bin/statusbar"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/tools/nvim-linux64/bin"
 
-xwallpaper --maximize $HOME/.config/wallpaper.png
+#xwallpaper --maximize $HOME/.config/wallpaper.png
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$PATH:$HOME/gems"
