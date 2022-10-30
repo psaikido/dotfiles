@@ -28,18 +28,6 @@ else
  PS1='\u@\h:\W$(parse_git_branch)\$ '
 fi
 
-alias ls='ls --color=auto'
-alias ll='ls -lh --color=auto --group-directories-first'
-alias la='ls -lha --color=auto --group-directories-first'
-alias vi='nvim'
-alias rn='ranger'
-alias cdc='cd ~/public_html/chanadmin/'
-alias cdh='cd ~/sites/hugle.uk'
-alias jj='nvim ~/crypt/journal/journal.lft'
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=nvim
@@ -72,3 +60,6 @@ export PATH="$PATH:$HOME/gems/bin"
 set -o vi
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
+
+source ~/.bash_aliases
+

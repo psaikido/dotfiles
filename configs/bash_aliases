@@ -5,6 +5,21 @@ cdl() {
   ls -lh
 }
 
+alias ls='ls --color=auto'
+alias ll='ls -lh --color=auto --group-directories-first'
+alias la='ls -lha --color=auto --group-directories-first'
 alias vi='nvim'
 alias rn='ranger'
+alias jj='nvim ~/crypt/journal/journal.lft'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# directories
+alias gc='cd ~/.config'
+alias gd='cd ~/dotfiles'
+alias gh='cd ~/sites/hugle.uk'
+alias gn='cd ~/neovim'
+alias gz='cd ~/sites/chanadmin'
+
 
