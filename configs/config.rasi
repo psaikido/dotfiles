@@ -1,6 +1,6 @@
 configuration {
-    modi: "drun,run";
-    combi-modi: [drun,run];
+    modi: "drun,run,filebrowser";
+    combi-modi: [drun,run,filebrowser];
     font: "hack 12";
     sidebar-mode: true;
 
