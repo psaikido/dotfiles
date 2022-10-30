@@ -47,6 +47,7 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/bin/statusbar"
 export PATH="$PATH:$HOME/bin"
 export PATH="$PATH:$HOME/appimages"
+export PATH="$PATH:$HOME/sites/chanadmin/public/vendor/bin"
 
 #xwallpaper --maximize $HOME/.config/wallpaper.png
 
