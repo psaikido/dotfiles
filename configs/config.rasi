@@ -1,7 +1,7 @@
 configuration {
     modi: "drun,run";
     combi-modi: [drun,run];
-    font: "sans-serif 14";
+    font: "hack 12";
     sidebar-mode: true;
 
     timeout {
@@ -15,7 +15,6 @@ configuration {
     }
 
 	terminal: "alacritty";
-
 }
 
 //@theme "/usr/share/rofi/themes/Monokai.rasi"
