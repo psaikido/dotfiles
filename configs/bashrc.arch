@@ -35,7 +35,7 @@ alias vi='nvim'
 alias rn='ranger'
 alias cdc='cd ~/public_html/chanadmin/'
 alias cdh='cd ~/sites/hugle.uk'
-alias jj='nvim /data/crypt/journal/journal.lft'
+alias jj='nvim ~/crypt/journal/journal.lft'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -58,7 +58,7 @@ cat {} || tree -C {}) 2> /dev/null | head -200'"
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/.local/bin/statusbar"
 export PATH="$PATH:$HOME/bin"
-export PATH="$PATH:$HOME/tools/nvim-linux64/bin"
+export PATH="$PATH:$HOME/appimages"
 
 #xwallpaper --maximize $HOME/.config/wallpaper.png
 
@@ -70,3 +70,5 @@ export PATH="$PATH:$HOME/gems/bin"
 # Esc + v to go into editing
 # save to take edited command back to the prompt
 set -o vi
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
