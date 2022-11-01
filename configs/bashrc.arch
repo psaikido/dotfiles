@@ -59,8 +59,8 @@ export PATH="$PATH:$HOME/gems/bin"
 # Esc + v to go into editing
 # save to take edited command back to the prompt
 set -o vi
-bind -m vi-command 'Control-l: clear-screen'
-bind -m vi-insert 'Control-l: clear-screen'
+bind -m vi-command 'Control-Alt-l: clear-screen'
+bind -m vi-insert 'Control-Alt-l: clear-screen'
 
 source ~/.bash_aliases
 
