@@ -7,3 +7,6 @@ Might need to install it with 'pip3 install ueberzug'.
 For English keyboard edit .config/xinitrc. This file gets symlinked as .xinitrc in the root of the home dir.
 setxdbmap gb &
 
+For initial setup if not running through the rchamp scripts, get the relevant script for 'dotfiles':
+/home/hughie/rchamp/scripts/on-metal/80.configs.sh
+
