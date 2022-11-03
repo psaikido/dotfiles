@@ -1,0 +1,8 @@
+# vim: filetype=neomuttrc
+source /usr/share/mutt-wizard/mutt-wizard.muttrc
+source /home/hughie/.config/mutt/accounts/hughie@carrollonline.uk.muttrc
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/hughie/.config/mutt/accounts/hughie@carrollonline.uk.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to hughie@carrollonline.uk"
+
+set sidebar_component_depth = 1
+
+source ./mutt-colors-solarized-dark-256.muttrc
