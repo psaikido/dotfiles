@@ -13,7 +13,7 @@ source /usr/share/mutt-wizard/switch.muttrc
 set spoolfile = +INBOX
 set postponed = +Drafts
 set trash = +Trash
-set record = /dev/null 
+set record = +Sent
 set signature = "~/.config/mutt/sig"
 
 macro index o "<shell-escape>mw -y hughie@hugle.uk<enter>" "run mbsync to sync hughie@hugle.uk"
