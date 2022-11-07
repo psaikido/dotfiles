@@ -9,6 +9,7 @@ cdl() {
 alias ls='ls --color=auto'
 alias ll='ls -lh --color=auto --group-directories-first'
 alias la='ls -lha --color=auto --group-directories-first'
+alias l='exa --long'
 alias vi='nvim'
 alias rn='ranger'
 alias jj='nvim ~/crypt/journal/journal.lft'

@@ -62,3 +62,8 @@ bind -m vi-insert 'Control-Alt-l: clear-screen'
 
 source ~/.bash_aliases
 
+# starship prompt
+eval "$(starship init bash)"
+
+# exa
+export EXA_COLORS="uu=1;34"
