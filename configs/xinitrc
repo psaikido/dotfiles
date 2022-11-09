@@ -40,3 +40,4 @@ picom -f &
 xwallpaper --maximize $HOME/.config/wallpaper.png &
 
 exec i3
+#exec leftwm
