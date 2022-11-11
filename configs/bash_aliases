@@ -16,6 +16,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # directories
+alias gb='cd ~/bin'
 alias gc='cd ~/.config'
 alias gd='cd ~/dotfiles'
 alias gh='cd ~/sites/hugle.uk'
