@@ -1,5 +1,8 @@
 # ~/.bash_profile
 
+remaps & # run the remaps script, switching caps/esc and more; check it for more info
+
+
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=nvim
