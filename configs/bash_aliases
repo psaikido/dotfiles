@@ -6,8 +6,8 @@ cdl() {
 }
 
 # navigation
-alias l='exa --long --group-directories-first'
-alias la='exa -la --group-directories-first'
+alias l='exa --long --group --group-directories-first'
+alias la='exa -la --group --group-directories-first'
 alias vi='nvim'
 alias rn='ranger'
 alias jj='nvim ~/crypt/journal/journal.lft'
