@@ -1,8 +1,5 @@
 # ~/.bash_profile
 
-remaps & # run the remaps script, switching caps/esc and more; check it for more info
-
-
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=nvim
@@ -14,8 +11,7 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 source /usr/share/fzf/completion.bash
 source /usr/share/fzf/key-bindings.bash
-export FZF_DEFAULT_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null ||
-cat {} || tree -C {}) 2> /dev/null | head -200'"
+export FZF_DEFAULT_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/bin"
@@ -23,6 +19,9 @@ export PATH="$PATH:$HOME/appimages"
 export PATH="$PATH:$HOME/sites/chanadmin/public/vendor/bin"
 
 #xwallpaper --maximize $HOME/.config/wallpaper.png
+
+# run the remaps script, switching caps/esc and more; check it for more info
+remaps &
 
 # Install Ruby Gems to ~/gems
 export GEM_HOME="$PATH:$HOME/gems"
