@@ -22,6 +22,7 @@ alias gd='cd ~/dotfiles'
 alias gh='cd ~/sites/hugle.uk'
 alias gn='cd ~/neovim'
 alias gz='cd ~/sites/chanadmin'
+alias gk='cd ~/sites/carrollonline.uk/club38.carrollonline.uk'
 
 # commands
 alias ssc='sudo systemctl'
