@@ -1,0 +1,11 @@
+Aqua-rings-110 Conky (v1.10)
+----------------------------
+
+Adjust your filepaths for the lua and atomfeed scripts, in the conkyrc:
+
+	lua_load = '~/.config/conky/Aqua-rings-110.lua',
+	
+	also change the disc mountpoints to your system.
+
+The lua script discmounts need to match as well. Comment out the CPU's,
+depending on how many cores you have
