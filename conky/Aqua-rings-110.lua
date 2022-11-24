@@ -222,7 +222,7 @@ gauge = {
 },
 {
     name='fs_used_perc',           arg='/bkp',                     max_value=100,
-    x=100,                          y=470,
+    x=100,                          y=510,
     graph_radius=54,
     graph_thickness=7,
     graph_start_angle=180,
@@ -243,7 +243,7 @@ gauge = {
 },
 {
     name='fs_used_perc',           arg='/home/hughie/',                     max_value=100,
-    x=100,                          y=470,
+    x=100,                          y=510,
     graph_radius=42,
     graph_thickness=7,
     graph_start_angle=180,
@@ -264,7 +264,7 @@ gauge = {
 },
 {
     name='fs_used_perc',           arg='/',                     max_value=100,
-    x=100,                          y=470,
+    x=100,                          y=510,
     graph_radius=30,
     graph_thickness=7,
     graph_start_angle=180,

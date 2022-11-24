@@ -86,7 +86,7 @@ conky.config = {
 };
 
 conky.text = [[
-${voffset 45}${alignr}${color4}rchamp1  ${kernel}
+${voffset 35}${alignr}${color4}${nodename}  ${kernel}
 ${voffset 5}
 ${font Raleway:size=14:style=bold}${color4}${alignr}CPU
 # Showing TOP 5 CPU-consumers
@@ -97,7 +97,7 @@ ${goto 115}${color3}${top name 4}${alignr}${top cpu 4}%
 ${goto 115}${top name 5}${alignr}${top cpu 5}%
 
 #Showing memory part with TOP 5
-${voffset 40}
+${voffset 10}
 ${font Raleway:size=14:style=bold}${color4}${alignr}MEM
 ${goto 115}${font}${color1}${top_mem name 1}${alignr}${top_mem mem_res 1}
 ${goto 115}${top_mem name 2}${alignr}${top_mem mem_res 2}
@@ -107,9 +107,9 @@ ${goto 115}${top_mem name 4}${alignr}${top_mem mem_res 5}
 
 # Showing disk partitions: root, home and bkp. Edit paths as required for your system
 ${voffset 0}
-${font Raleway:size=14:style=bold}${color4}${alignr}DISKS
-${voffset 10}${alignr}${diskiograph 20,180 666666 68364B -t -l}
-${voffset -10}
+${font Raleway:size=16:style=bold}${color4}${alignr}DISKS
+${voffset 20}${alignr}${diskiograph 20,180 666666 68364B -t -l}
+${voffset 0}
 ${offset 100}${font}${color3}root: ${fs_used /}${alignr} of: ${fs_size /}
 ${offset 100}home: ${fs_used /home/hughie}${alignr} of: ${fs_size /home/hughie}
 ${offset 100}bkp: ${fs_used /bkp}${alignr} of: ${fs_size /bkp}
