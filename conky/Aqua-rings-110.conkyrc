@@ -105,13 +105,13 @@ ${goto 115}${color2}${top_mem name 3}${alignr}${top_mem mem_res 3}
 ${goto 115}${color3}${top_mem name 4}${alignr}${top_mem mem_res 4}
 ${goto 115}${top_mem name 4}${alignr}${top_mem mem_res 5}
 
-# Showing disk partitions: root, home and Data. Edit paths as required for your system
+# Showing disk partitions: root, home and bkp. Edit paths as required for your system
 ${voffset 0}
 ${font Raleway:size=14:style=bold}${color4}${alignr}DISKS
 ${voffset 10}${alignr}${diskiograph 20,180 666666 68364B -t -l}
 ${voffset -10}
-${offset 130}${font}${color3}Free: ${fs_free /}${alignr}Used: ${fs_used /}
-${offset 130}Free: ${fs_free /home/hughie}${alignr}Used: ${fs_used /home/hughie}
-${offset 130}Free: ${fs_free /bkp}${alignr}Used: ${fs_used /bkp}
+${offset 100}${font}${color3}root: ${fs_used /}${alignr} of: ${fs_size /}
+${offset 100}home: ${fs_used /home/hughie}${alignr} of: ${fs_size /home/hughie}
+${offset 100}bkp: ${fs_used /bkp}${alignr} of: ${fs_size /bkp}
 # End
 ]];
