@@ -28,3 +28,8 @@ macro index,pager Cb ";<copy-message>=Save/biz<enter>" "copy mail to biz"
 macro index,pager gw "<change-folder>=Save/WritersGroups<enter>" "go to WritersGroups"
 macro index,pager Mw ";<save-message>=Save/WritersGroups<enter>" "move mail to WritersGroups"
 macro index,pager Cw ";<copy-message>=Save/WritersGroups<enter>" "copy mail to WritersGroups"
+
+# use abook
+set query_command = "abook --mutt-query '%s'"
+macro generic,index,pager \ca "<shell-escape>abook<return>" "launch abook"
+macro index,pager A "<pipe-message>abook --add-email<return>" "add the sender address to abook"
