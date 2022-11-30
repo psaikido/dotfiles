@@ -20,7 +20,8 @@ macro index o "<shell-escape>mw -y hughie@hugle.uk<enter>" "run mbsync to sync h
 macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a hughie@hugle.uk<enter>"  "publish GPG key to WKS provider"
 macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a hughie@hugle.uk<enter>" "confirm GPG publication"
 
-mailboxes "=INBOX" "=INBOX/Save/General" "=INBOX/Save/PillowWriters" ="Archive" "=Drafts" "=Sent" "=Trash" "=Spam" 
+mailboxes "=INBOX" "=INBOX/Save/General" "=INBOX/Save/PillowWriters" ="Archive" "=Drafts" "=Sent" "Sent Mail" "=Trash" "=Spam" 
+
 macro index,pager gg "<change-folder>=INBOX/Save/General<enter>" "go to General"
 macro index,pager Mg ";<save-message>=INBOX/Save/General<enter>" "move mail to General"
 macro index,pager Cg ";<copy-message>=INBOX/Save/General<enter>" "copy mail to General"
@@ -35,3 +36,4 @@ set query_command = "abook --mutt-query '%s'"
 macro generic,index,pager \ca "<shell-escape>abook<return>" "launch abook"
 macro index,pager A "<pipe-message>abook --add-email<return>" "add the sender address to abook"
 
+bind index x alias-dialog
