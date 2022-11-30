@@ -38,6 +38,7 @@ picom -f &
 
 # wallpaper
 xwallpaper --maximize $HOME/.config/wallpaper.png &
+gtk-application-prefer-dark-theme = true
 
 exec i3
 #exec leftwm
