@@ -112,6 +112,6 @@ ${voffset 0}${alignr}${diskiograph 20,100 666666 68364B -t -l}
 ${voffset 0}
 ${offset 80}${font}${color3}root: ${fs_used /}${alignr} of: ${fs_size /}
 ${offset 80}home: ${fs_used /home/hughie}${alignr} of: ${fs_size /home/hughie}
-${offset 80}bkp: ${fs_used /bkp}${alignr} of: ${fs_size /bkp}
+${offset 80}bkp: ${fs_used /bkp2}${alignr} of: ${fs_size /bkp2}
 # End
 ]];
