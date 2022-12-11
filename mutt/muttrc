@@ -4,7 +4,13 @@ source /home/hughie/.config/mutt/accounts/hughie@carrollonline.uk.muttrc
 source /home/hughie/.config/mutt/accounts/hughie@hugle.uk.muttrc
 
 set sidebar_component_depth = 1
-#source ./mutt-colors-solarized-dark-256.muttrc
+set sidebar_new_mail_only = no
+bind index,pager \Cp sidebar-prev
+bind index,pager \Cn sidebar-next
+bind index,pager \Co sidebar-open
+bind index,pager \Ck sidebar-prev-new
+bind index,pager \Cj sidebar-next-new
+
 source ./dracula.muttrc
 
 macro index,pager i1 '<sync-mailbox><enter-command>source /home/hughie/.config/mutt/accounts/hughie@carrollonline.uk.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to hughie@carrollonline.uk"
