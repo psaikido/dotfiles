@@ -4,7 +4,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export EDITOR=nvim
 export TERMINAL=alacritty
-export BROWSER=brave
+export BROWSER=brave-beta
 export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # fuzzy finder
@@ -54,6 +54,6 @@ else
 fi
 
 # run the remaps script, switching caps/esc and more; check it for more info
-/home/hughie/dotfiles/local/bin/remaps
+~/.local/bin/remaps
 
 . ~/.bashrc
