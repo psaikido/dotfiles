@@ -1,0 +1,47 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+case "$TERM" in
+    xterm-color) color_prompt=yes;;
+esac
+
+if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+# We have color support; assume it's compliant with Ecma-48
+# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+# a case would tend to support setf rather than setaf.)
+    color_prompt=yes
+    else
+    color_prompt=
+fi
+
+parse_git_branch() {
+ git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+
+if [ "$color_prompt" = yes ]; then
+ PS1='\[\033[0;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[01;31m\]$(parse_git_branch)\[\033[00m\]\$ '
+else
+ PS1='\u@\h:\W$(parse_git_branch)\$ '
+fi
+
+# use vi commands on the command line
+# Esc + v to go into editing
+# save to take edited command back to the prompt
+set -o vi
+bind -m vi-command 'Control-Alt-l: clear-screen'
+bind -m vi-insert 'Control-Alt-l: clear-screen'
+
+source ~/.bash_aliases
+
+# starship prompt
+# eval "$(starship init bash)"
+
+# exa make the username blue
+export EXA_COLORS="uu=1;34"
+
+# shell option set autocd on - just type dir name and go
+shopt -s autocd

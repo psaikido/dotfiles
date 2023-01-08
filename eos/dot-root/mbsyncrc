@@ -1,0 +1,53 @@
+
+
+IMAPStore hughie@carrollonline.uk-remote
+Host imap.zoho.com
+Port 993
+User hughie@carrollonline.uk
+PassCmd "pass hughie@carrollonline.uk"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore hughie@carrollonline.uk-local
+Subfolders Verbatim
+Path /home/hughie/.local/share/mail/hughie@carrollonline.uk/
+Inbox /home/hughie/.local/share/mail/hughie@carrollonline.uk/INBOX
+
+Channel hughie@carrollonline.uk
+Expunge Both
+Far :hughie@carrollonline.uk-remote:
+Near :hughie@carrollonline.uk-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+IMAPStore hughie@hugle.uk-remote
+Host imap.123-reg.co.uk
+Port 993
+User hughie@hugle.uk
+PassCmd "pass hughie@hugle.uk"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore hughie@hugle.uk-local
+Subfolders Verbatim
+Path /home/hughie/.local/share/mail/hughie@hugle.uk/
+Inbox /home/hughie/.local/share/mail/hughie@hugle.uk/INBOX
+
+Channel hughie@hugle.uk
+Expunge Both
+Far :hughie@hugle.uk-remote:
+Near :hughie@hugle.uk-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
