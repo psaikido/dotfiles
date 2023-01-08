@@ -11,6 +11,7 @@ alias la='exa -la --group --group-directories-first'
 alias vi='nvim'
 alias rn='ranger'
 alias jj='nvim ~/crypt/journal/journal.lft'
+alias jt='nvim ~/crypt/journal/journal-tech.lft'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
