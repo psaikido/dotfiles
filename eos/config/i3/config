@@ -69,17 +69,44 @@ floating_modifier $mod
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
+# Define names for default workspaces for which we configure key bindings later on.
+# We use variables to avoid repeating the names in multiple places.
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+set $img1 ~/wallpapers/0002.jpg
+# set $img2 ~/wallpapers/0005.jpg
+# set $img3 ~/wallpapers/0010.jpg
+# set $img4 ~/wallpapers/0016.jpg
+# set $img5 ~/wallpapers/0018.jpg
+# set $img6 ~/wallpapers/0023.jpg
+set $img7 ~/Documents/club38/sundry/images/theDowns-Hughku-Gucci.png
+
+set $img2 ~/sites/hugle.uk/static/images/thesium/another-sunset-somewhere.png
+set $img3 ~/sites/hugle.uk/static/images/thesium/orbital.jpg
+set $img4 ~/sites/hugle.uk/static/images/thesium/electron-kiss.jpg
+set $img5 ~/sites/hugle.uk/static/images/thesium/dragon-egg.jpg
+set $img6 ~/sites/hugle.uk/static/images/thesium/planet-buster.jpg
+
 # Do a background alias so we can have a random background on each workspace.
 set $dofeh exec --no-startup-id feh --bg-scale 
 
 # switch to workspace
-bindsym $mod+1    workspace  $ws1; $dofeh ~/wallpapers/0003.jpg
-bindsym $mod+2    workspace  $ws2; $dofeh ~/wallpapers/0005.jpg
-bindsym $mod+3    workspace  $ws3; $dofeh ~/wallpapers/0010.jpg
-bindsym $mod+4    workspace  $ws4; $dofeh ~/wallpapers/0016.jpg
-bindsym $mod+5    workspace  $ws5; $dofeh ~/wallpapers/0018.jpg
-bindsym $mod+6    workspace  $ws6; $dofeh ~/wallpapers/0023.jpg
-bindsym $mod+7    workspace  $ws7; $dofeh ~/Documents/club38/sundry/images/theDowns-Hughku-Gucci.png
+bindsym $mod+1    workspace  $ws1; $dofeh $img1
+bindsym $mod+2    workspace  $ws2; $dofeh $img2
+bindsym $mod+3    workspace  $ws3; $dofeh $img3
+bindsym $mod+4    workspace  $ws4; $dofeh $img4
+bindsym $mod+5    workspace  $ws5; $dofeh $img5
+bindsym $mod+6    workspace  $ws6; $dofeh $img6
+bindsym $mod+7    workspace  $ws7; $dofeh $img7
 bindsym $mod+8    workspace  $ws8; $dofeh --randomize ~/wallpapers/
 bindsym $mod+9    workspace  $ws9; $dofeh --randomize ~/wallpapers/
 bindsym $mod+0    workspace  $ws10; $dofeh --randomize ~/wallpapers/
@@ -288,19 +315,6 @@ bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles
 ##########################################
 # configuration for workspace behaviour: #
 ##########################################
-
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
-set $ws1 "1"
-set $ws2 "2"
-set $ws3 "3"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
-set $ws7 "7"
-set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
 
 # use workspaces on different displays:
 # where you have to replace VGA-0/HDMI-0 with the names for your displays
