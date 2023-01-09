@@ -69,17 +69,20 @@ floating_modifier $mod
 bindsym $mod+Tab workspace next
 bindsym $mod+Shift+Tab workspace prev
 
+# Do a background alias so we can have a random background on each workspace.
+set $dofeh exec --no-startup-id feh --bg-scale 
+
 # switch to workspace
-bindsym $mod+1    workspace  $ws1
-bindsym $mod+2    workspace  $ws2
-bindsym $mod+3    workspace  $ws3
-bindsym $mod+4    workspace  $ws4
-bindsym $mod+5    workspace  $ws5
-bindsym $mod+6    workspace  $ws6
-bindsym $mod+7    workspace  $ws7
-bindsym $mod+8    workspace  $ws8
-bindsym $mod+9    workspace  $ws9
-bindsym $mod+0    workspace  $ws10
+bindsym $mod+1    workspace  $ws1; $dofeh ~/wallpapers/0003.jpg
+bindsym $mod+2    workspace  $ws2; $dofeh ~/wallpapers/0005.jpg
+bindsym $mod+3    workspace  $ws3; $dofeh ~/wallpapers/0010.jpg
+bindsym $mod+4    workspace  $ws4; $dofeh ~/wallpapers/0016.jpg
+bindsym $mod+5    workspace  $ws5; $dofeh ~/wallpapers/0018.jpg
+bindsym $mod+6    workspace  $ws6; $dofeh ~/wallpapers/0023.jpg
+bindsym $mod+7    workspace  $ws7; $dofeh ~/Documents/club38/sundry/images/theDowns-Hughku-Gucci.png
+bindsym $mod+8    workspace  $ws8; $dofeh --randomize ~/wallpapers/
+bindsym $mod+9    workspace  $ws9; $dofeh --randomize ~/wallpapers/
+bindsym $mod+0    workspace  $ws10; $dofeh --randomize ~/wallpapers/
 
 # switch to workspace with numpad keys
 bindcode $mod+87 workspace 1
@@ -288,11 +291,11 @@ bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:"
-set $ws2 "2:"
-set $ws3 "3:"
-set $ws4 "4:"
-set $ws5 "5:"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
@@ -464,7 +467,7 @@ for_window [class="urxvt"] border pixel 1
 ######################################
 
 # Define colors variables:
-set $darkbluetrans	#08052be6
+set $darkbluetrans	#08052b
 set $darkblue		#08052b
 set $lightblue		#5294e2
 set $urgentred		#e53935
@@ -478,7 +481,7 @@ set $yellowbrown	#e1b700
 
 # define colors for windows:
 #class		        	border		bground		text		indicator	child_border
-client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$mediumgrey
+client.focused		    	$lightblue	$darkblue	$white		$mediumgrey	$urgentred
 client.unfocused	    	$darkblue	$darkblue	$grey		$darkgrey	$darkgrey
 client.focused_inactive		$darkblue	$darkblue	$grey		$black		$black
 client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
@@ -575,3 +578,5 @@ bindsym $mod+t exec rofi -show window \
 #		-config ~/.config/rofi/rofidmenu.rasi
 
 bindsym Ctrl+Shift+b exec ~/bin/bookmarks 
+
+smart_borders on
