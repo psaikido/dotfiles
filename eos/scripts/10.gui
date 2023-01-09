@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# gui.sh
+sudo pacman -S \
+alacritty \
+bat \
+exa \
+feh \
+hugo \
+neovim \
+python-pip \
+tmux \
+w3m \
+xcape \
+xsel \
+zathura \
+zathura-pdf-mupdf
+

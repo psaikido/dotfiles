@@ -1,0 +1,108 @@
+#!/bin/bash
+
+home='/home/hughie'
+cd $home
+
+git clone https://github.com/psaikido/dotfiles $home/dotfiles
+#git clone git@bitbucket.org/psaikido/bin $home/bin
+git clone https://gitlab.com/dwt1/wallpapers $home/wallpapers
+
+# dotfiles
+FILE=$home/.bashrc
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+ln -s $home/dotfiles/eos/dot-root/bashrc $home/.bashrc
+
+FILE=$home/.bash_aliases
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+ln -s $home/dotfiles/eos/dot-root/bash_aliases $home/.bash_aliases
+
+FILE=$home/.profile
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+ln -s $home/dotfiles/eos/dot-root/bash_profile $home/.profile
+
+
+# alacritty
+FILE=$home/.config/alacritty/alacritty.yml
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+mkdir $home/.config/alacritty
+ln -s $home/dotfiles/eos/config/alacritty/alacritty.yml $home/.config/alacritty/alacritty.yml
+
+
+# calcurse
+FILE=$home/.config/calcurse/caldav/config
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+[ ! -d $home/.config/calcurse ]
+ln -s $home/dotfiles/calcurse $home/.config/calcurse
+
+# i3
+FILE=$home/.config/i3/config
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+[ ! -d $home/.config/i3 ] && sudo -u hughie mkdir $home/.config/i3
+ln -s $home/dotfiles/eos/config/i3/config $home/.config/i3/config
+
+FILE=$home/.config/i3/i3blocks.conf
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+ln -s $home/dotfiles/eos/config/i3/i3blocks.conf $home/.config/i3/i3blocks.conf
+
+
+# neomutt
+FILE=$home/.config/mutt/muttrc
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+[ ! -d $home/.config/mutt ] && sudo -u hughie mkdir $home/.config/mutt
+ln -s $home/dotfiles/eos/config/mutt $home/.config/mutt
+
+
+# ranger
+sudo -u hughie mkdir $home/.config/ranger
+sudo -u hughie ranger --copy-config=all
+FILE=$home/.config/ranger/rc.conf
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+[ ! -d $home/.config/ranger ] && sudo -u hughie mkdir $home/.config/ranger
+ln -s $home/dotfiles/eos/config/ranger/rc.conf $home/.config/ranger/rc.conf
+
+FILE=$home/.config/ranger/rifle.conf
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+ln -s $home/dotfiles/eos/config/ranger/rifle.conf $home/.config/ranger/rifle.conf
+
+
+# tmux
+FILE=$home/.tmux.conf
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+mkdir $home/.tmux
+ln -s $home/dotfiles/eos/dot-root/tmux.conf $home/.tmux.conf
+  
+[ ! -d $home/.config/tmux ] && ln -s $home/dotfiles/eos/config/tmux $home/.config/tmux
+
+
+# remap keys change caps lock to another escape
+FILE=$home/.local/bin/remaps
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+[ ! -d $home/.local ] && sudo -u hughie mkdir $home/.local
+[ ! -d $home/.local/bin ] && sudo -u hughie mkdir $home/.local/bin
+ln -s ~/dotfiles/local/bin/remaps ~/.local/bin/remaps
+
+chown hughie:hughie -R $home

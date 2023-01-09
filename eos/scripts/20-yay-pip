@@ -1,0 +1,16 @@
+#!/bin/bash
+
+pip install --upgrade pynvim 
+
+yay -S  \
+abook \
+bluejeans \
+brave-beta-bin \
+dracula-gtk-theme \
+gotop \
+mutt-wizard \
+pam-gnupg \
+python-pynvim \
+twmn-git \
+zoom
+
