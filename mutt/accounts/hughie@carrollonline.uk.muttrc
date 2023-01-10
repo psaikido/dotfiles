@@ -20,7 +20,7 @@ macro index o "<shell-escape>mw -y hughie@carrollonline.uk<enter>" "run mbsync t
 macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a hughie@carrollonline.uk<enter>"  "publish GPG key to WKS provider"
 macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a hughie@carrollonline.uk<enter>" "confirm GPG publication"
 
-mailboxes "=INBOX" "=Drafts" "=Sent" "=Spam" "=Trash" "=Fellowship" "=aSimon" "=co.uk" "=Save" "=Save/biz" "=Save/WritersGroups" "=Save/dev" "=Save/Sophie" "=Save/Wendy" "=Save/books" "=Save/mam90" "=Save/chess" "=zz/Corinne" 
+mailboxes "=INBOX" "=co.uk" "=Drafts" "=Sent" "=Fellowship" "=aSimon" "=Save" "=Save/biz" "=Save/WritersGroups" "=Save/dev" "=Save/Sophie" "=Save/Wendy" "=Save/books" "=Save/mam90" "=Save/chess" "=zz/Corinne" "=Spam" "=Trash" 
 
 macro index,pager gb "<change-folder>=Save/biz<enter>" "go to biz"
 macro index,pager Mb ";<save-message>=Save/biz<enter>" "move mail to biz"
