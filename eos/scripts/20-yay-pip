@@ -10,7 +10,10 @@ dracula-gtk-theme \
 gotop \
 mutt-wizard \
 pam-gnupg \
+picom \
 python-pynvim \
 twmn-git \
 zoom
 
+# Set up pam-gnupg
+# https://github.com/cruegge/pam-gnupg

@@ -4,9 +4,11 @@
 sudo pacman -S \
 alacritty \
 bat \
+cronie \
 exa \
 feh \
 hugo \
+lynx \
 neovim \
 python-pip \
 tmux \

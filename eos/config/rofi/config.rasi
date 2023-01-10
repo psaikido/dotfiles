@@ -1,0 +1,27 @@
+configuration {
+    modi: "drun,run,filebrowser";
+    combi-modi: [drun,run,filebrowser];
+    font: "hack 12";
+    sidebar-mode: true;
+
+    timeout {
+      action: "kb-cancel";
+      delay:  0;
+    }
+
+    filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+    }
+
+	terminal: "alacritty";
+}
+
+//@theme "/usr/share/rofi/themes/Monokai.rasi"
+//@theme "/usr/share/rofi/themes/fancy.rasi"
+//@theme "/usr/share/rofi/themes/solarized.rasi"
+//@theme "/usr/share/rofi/themes/sidebar.rasi"
+//@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+//@theme "/usr/share/rofi/themes/solarized_alternate.rasi"
+//@theme "/usr/share/rofi/themes/DarkBlue.rasi"
+@theme "/usr/share/rofi/themes/DarkBlue.rasi"

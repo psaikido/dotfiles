@@ -3,8 +3,8 @@
 home='/home/hughie'
 cd $home
 
-git clone https://github.com/psaikido/dotfiles $home/dotfiles
-#git clone git@bitbucket.org/psaikido/bin $home/bin
+# git clone https://github.com/psaikido/dotfiles $home/dotfiles
+# git clone git@bitbucket.org/psaikido/bin $home/bin
 git clone https://gitlab.com/dwt1/wallpapers $home/wallpapers
 
 # dotfiles
@@ -63,7 +63,6 @@ FILE=$home/.config/mutt/muttrc
 if test -f "$FILE"; then
     mv $FILE $FILE.bk
 fi
-mkdir -p $home/.config/mutt
 ln -s $home/dotfiles/eos/config/mutt $home/.config/mutt
 
 
@@ -91,9 +90,7 @@ if test -f "$FILE"; then
 fi
 mkdir -p $home/.tmux
 ln -s $home/dotfiles/eos/dot-root/tmux.conf $home/.tmux.conf
-  
-mkdir -p $home/.config/tmux
-ln -s $home/dotfiles/eos/config/tmux $home/.config/tmux
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm  
 
 
 # remap keys change caps lock to another escape
@@ -101,8 +98,8 @@ FILE=$home/.local/bin/remaps
 if test -f "$FILE"; then
     mv $FILE $FILE.bk
 fi
-[ ! -d $home/.local ] && sudo -u hughie mkdir $home/.local
-[ ! -d $home/.local/bin ] && sudo -u hughie mkdir $home/.local/bin
-ln -s ~/dotfiles/local/bin/remaps ~/.local/bin/remaps
+mkdir -p $home/.local
+mkdir -p $home/.local/bin
+ln -s ~/dotfiles/eos/local/bin/remaps ~/.local/bin/remaps
 
 chown hughie:hughie -R $home
