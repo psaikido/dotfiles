@@ -7,6 +7,7 @@ bat \
 cronie \
 exa \
 feh \
+htop \
 hugo \
 lynx \
 neovim \
@@ -14,6 +15,7 @@ python-pip \
 tmux \
 w3m \
 xcape \
+xdotool \
 xsel \
 zathura \
 zathura-pdf-mupdf

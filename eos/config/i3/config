@@ -592,5 +592,6 @@ bindsym $mod+t exec rofi -show window \
 #		-config ~/.config/rofi/rofidmenu.rasi
 
 bindsym Ctrl+Shift+b exec ~/bin/bookmarks 
+bindsym Ctrl+Shift+m exec ~/bin/tmux-rofi 
 
 smart_borders on
