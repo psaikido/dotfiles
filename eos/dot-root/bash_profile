@@ -58,3 +58,5 @@ fi
 ~/.local/bin/remaps
 
 . ~/.bashrc
+
+export I3_IMG2=~/wallpapers/0005.jpg

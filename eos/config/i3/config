@@ -83,7 +83,7 @@ set $ws9 "9"
 set $ws10 "10"
 
 set $img1 ~/wallpapers/0002.jpg
-set $img2 ~/wallpapers/0005.jpg
+#set $img2 ~/wallpapers/0005.jpg
 set $img3 ~/wallpapers/0010.jpg
 set $img4 ~/wallpapers/0016.jpg
 set $img5 ~/wallpapers/0018.jpg
@@ -343,11 +343,11 @@ bindsym $mod+Shift+p exec ~/.config/i3/scripts/power-profiles
 # assign [class="TelegramDesktop"] $ws5
 
 # automatic set focus new window if it opens on another workspace than the current:
-for_window [class=Xfce4-terminal] focus
-for_window [class=(?i)firefox] focus
-for_window [class=Thunar] focus
-for_window [class=Thunderbird] focus
-for_window [class=TelegramDesktop] focus
+# for_window [class=Xfce4-terminal] focus
+# for_window [class=(?i)firefox] focus
+# for_window [class=Thunar] focus
+# for_window [class=Thunderbird] focus
+# for_window [class=TelegramDesktop] focus
 
 ##############
 # compositor #
@@ -404,6 +404,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # start conky:
 #exec_always --no-startup-id conky
+exec_always --no-startup-id ~/bin/conkyh &
 
 # start a script to setup displays
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
