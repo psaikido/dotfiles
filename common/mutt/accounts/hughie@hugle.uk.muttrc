@@ -20,16 +20,22 @@ macro index o "<shell-escape>mw -y hughie@hugle.uk<enter>" "run mbsync to sync h
 macro index \eg "<enter-command>unset wait_key<enter><shell-escape>gpg --list-secret-keys; printf 'Enter email ID of user to publish: '; read eID; printf 'Enter fingerprint of GPG key to publish: '; read eFGPT; /usr/libexec/gpg-wks-client --create \$eFGPT \$eID | msmtp --read-envelope-from --read-recipients -a hughie@hugle.uk<enter>"  "publish GPG key to WKS provider"
 macro index \eh "<pipe-message>/usr/libexec/gpg-wks-client --receive | msmtp --read-envelope-from --read-recipients -a hughie@hugle.uk<enter>" "confirm GPG publication"
 
-mailboxes "=INBOX" "=INBOX/Save/General" "=INBOX/Save/PillowWriters" ="Archive" "=Drafts" "=Sent Mail" "=Sent" "=Trash" "=Spam" 
+mailboxes "=INBOX" "=INBOX/Save/General" "=INBOX/Save/biz" "=INBOX/Save/PillowWriters" "=INBOX/Save/Kites" ="Archive" "=Drafts" "=Sent Mail" "=Sent" "=Trash" "=Spam" 
 
 macro index,pager gg "<change-folder>=INBOX/Save/General<enter>" "go to General"
 macro index,pager Mg ";<save-message>=INBOX/Save/General<enter>" "move mail to General"
 macro index,pager Cg ";<copy-message>=INBOX/Save/General<enter>" "copy mail to General"
+macro index,pager gb "<change-folder>=INBOX/Save/biz<enter>" "go to biz"
+macro index,pager Mb ";<save-message>=INBOX/Save/biz<enter>" "move mail to biz"
+macro index,pager Cb ";<copy-message>=INBOX/Save/biz<enter>" "copy mail to biz"
 macro index,pager gp "<change-folder>=INBOX/Save/PillowWriters<enter>" "go to PillowWriters"
 macro index,pager Mp ";<save-message>=INBOX/Save/PillowWriters<enter>" "move mail to PillowWriters"
 macro index,pager Cp ";<copy-message>=INBOX/Save/PillowWriters<enter>" "copy mail to PillowWriters"
+macro index,pager gk "<change-folder>=INBOX/Save/Kites<enter>" "go to Kites"
+macro index,pager Mk ";<save-message>=INBOX/Save/Kites<enter>" "move mail to Kites"
+macro index,pager Ck ";<copy-message>=INBOX/Save/Kites<enter>" "copy mail to Kites"
 
-sidebar_whitelist +INBOX/Save/General +INBOX/Save/PillowWriters +Archive +Drafts +"Sent Mail" +Sent +Trash +Spam 
+sidebar_whitelist +INBOX/Save/General +INBOX/Save/biz +INBOX/Save/PillowWriters +INBOX/Save/Kites +Archive +Drafts +"Sent Mail" +Sent +Trash +Spam 
 
 # use abook
 set query_command = "abook --mutt-query '%s'"
