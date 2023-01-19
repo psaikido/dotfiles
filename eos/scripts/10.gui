@@ -20,5 +20,6 @@ xclip \
 xdotool \
 xsel \
 zathura \
-zathura-pdf-mupdf
+zathura-pdf-mupdf \
+zoxide
 

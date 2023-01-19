@@ -45,3 +45,6 @@ export EXA_COLORS="uu=1;34"
 
 # shell option set autocd on - just type dir name and go
 shopt -s autocd
+
+# zoxide
+eval "$(zoxide init --cmd j bash)"
