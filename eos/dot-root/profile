@@ -1,4 +1,4 @@
-. ~/.bashrc
+# ~/.profile
 
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -9,10 +9,10 @@ export BROWSER=brave-beta
 export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # fuzzy finder
-export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden --color=always'
 source /usr/share/fzf/completion.bash
 source /usr/share/fzf/key-bindings.bash
-export FZF_DEFAULT_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+#export FZF_DEFAULT_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 
 export PATH="$PATH:$HOME/.local/bin"
 export PATH="$PATH:$HOME/bin"
@@ -26,9 +26,8 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 #xwallpaper --maximize $HOME/.config/wallpaper.png
 
-# Install Ruby Gems to ~/gems
-export GEM_HOME="$HOME/gems"
-export PATH="$HOME/gems/bin:$PATH"
+export GEM_HOME="$HOME/.local/share/gem"
+export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
 # start the ssh-agent
 SSH_ENV="$HOME/.ssh/agent-environment"
@@ -43,7 +42,6 @@ function start_agent {
 }
 
 # Source SSH settings, if applicable
-
 if [ -f "${SSH_ENV}" ]; then
     . "${SSH_ENV}" > /dev/null
     #ps ${SSH_AGENT_PID} doesn't work under cywgin
@@ -56,3 +54,6 @@ fi
 
 # run the remaps script, switching caps/esc and more; check it for more info
 ~/.local/bin/remaps
+
+source ~/.bashrc
+
