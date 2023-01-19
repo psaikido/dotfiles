@@ -82,44 +82,20 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
-set $img1 ~/wallpapers/0002.jpg
-#set $img2 ~/wallpapers/0005.jpg
-set $img3 ~/wallpapers/0010.jpg
-set $img4 ~/wallpapers/0016.jpg
-set $img5 ~/wallpapers/0018.jpg
-set $img6 ~/wallpapers/0023.jpg
-set $img7 ~/Documents/club38/sundry/images/theDowns-Hughku-Gucci.png
-#
-# set $img2 ~/sites/hugle.uk/static/images/thesium/another-sunset-somewhere.png
-# set $img3 ~/sites/hugle.uk/static/images/thesium/orbital.jpg
-# set $img4 ~/sites/hugle.uk/static/images/thesium/electron-kiss.jpg
-# set $img5 ~/sites/hugle.uk/static/images/thesium/dragon-egg.jpg
-# set $img6 ~/sites/hugle.uk/static/images/thesium/planet-buster.jpg
-
-# set $img1 /usr/share/endeavouros/backgrounds/eos_wallpapers_classic/Endy_planet.png
-# set $img2 /usr/share/endeavouros/backgrounds/eos_wallpapers_classic/EOS_planets_Artemis.png
-# set $img3 /usr/share/endeavouros/backgrounds/eos_wallpapers_community/Endy_conquest_1140P_16-9_centered.png
-# set $img4 /usr/share/endeavouros/backgrounds/eos_wallpapers_community/HAL-OS-SORRY.png
-# set $img5 /usr/share/endeavouros/backgrounds/eos_wallpapers_community/LAUNCH-Morning.png
-# set $img6 /usr/share/endeavouros/backgrounds/eos_wallpapers_community/neon_astronaut_endeavor.jpg
-# set $img7 /usr/share/endeavouros/backgrounds/eos_wallpapers_classic/endeavouros_i3.png
-
-# exec cat ~/.config/i3/bkg-set
-
 # Do a background alias so we can have a random background on each workspace.
 set $dofeh exec --no-startup-id feh --bg-scale 
 
 # switch to workspace
-bindsym $mod+1    workspace  $ws1; $dofeh $img1
-bindsym $mod+2    workspace  $ws2; $dofeh $img2
-bindsym $mod+3    workspace  $ws3; $dofeh $img3
-bindsym $mod+4    workspace  $ws4; $dofeh $img4
-bindsym $mod+5    workspace  $ws5; $dofeh $img5
-bindsym $mod+6    workspace  $ws6; $dofeh $img6
-bindsym $mod+7    workspace  $ws7; $dofeh $img7
-bindsym $mod+8    workspace  $ws8; $dofeh --randomize ~/wallpapers/
-bindsym $mod+9    workspace  $ws9; $dofeh --randomize ~/wallpapers/
-bindsym $mod+0    workspace  $ws10; $dofeh --randomize ~/wallpapers/
+bindsym $mod+1 workspace $ws1; $dofeh ~/.config/i3/walls/pic_01
+bindsym $mod+2 workspace $ws2; $dofeh ~/.config/i3/walls/pic_02
+bindsym $mod+3 workspace $ws3; $dofeh ~/.config/i3/walls/pic_03
+bindsym $mod+4 workspace $ws4; $dofeh ~/.config/i3/walls/pic_04
+bindsym $mod+5 workspace $ws5; $dofeh ~/.config/i3/walls/pic_05
+bindsym $mod+6 workspace $ws6; $dofeh ~/.config/i3/walls/pic_06
+bindsym $mod+7 workspace $ws7; $dofeh ~/.config/i3/walls/pic_07
+bindsym $mod+8 workspace $ws8; $dofeh --randomize ~/wallpapers/
+bindsym $mod+9 workspace $ws9; $dofeh --randomize ~/wallpapers/
+bindsym $mod+10 workspace $ws10; $dofeh --randomize ~/wallpapers/
 
 # switch to workspace with numpad keys
 bindcode $mod+87 workspace 1
@@ -404,7 +380,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # start conky:
 #exec_always --no-startup-id conky
-exec_always --no-startup-id ~/bin/conkyh &
+#exec_always --no-startup-id ~/bin/conkyh &
 
 # start a script to setup displays
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
