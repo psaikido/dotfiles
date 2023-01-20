@@ -1,7 +1,9 @@
 [user]
 	name = Hugh Carroll
-	email = hughie@carrollonline.co.uk
+	email = hughie@carrollonline.uk
 [core]
 	editor = nvim
 [pull]
 	rebase = true
+[init]
+	defaultBranch = master
