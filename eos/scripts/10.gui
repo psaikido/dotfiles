@@ -15,6 +15,7 @@ neovim \
 python-pip \
 tmux \
 w3m \
+words \
 xcape \
 xclip \
 xdotool \
