@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+#
+url="https://www.moongiant.com/phase/today"
+pattern="Phase:"
+phase=$(curl -s "$url" | grep "$pattern" | awk -F ">" '{print $3}' | sed 's/<\/span//g')
+
+
+case "$phase" in
+	"New Moon")
+		img="🌚"
+	;;
+
+	"Waxing Crescent")
+		img="🌒"
+	;;
+
+	"First Quarter")
+		img="🌓"
+	;;
+
+	"Waxing Gibbous")
+		img="🌔"
+	;;
+
+	"Full Moon")
+		img="🌕"
+	;;
+
+	"Waning Gibbous")
+		img="🌖"
+	;;
+
+	"Last Quarter")
+		img="🌗"
+	;;
+
+	"Waning Crescent")
+		img="🌘"
+	;;
+esac
+
+echo "$img"
