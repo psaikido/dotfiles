@@ -20,9 +20,10 @@ Hostname = dav.123-reg.co.uk
 # path following your host name in the URL.
 Path = caldav/Y2FsOi8vMC8zMQ
 # http://dav.123-reg.co.uk/caldav/Y2FsOi8vMC8zMQ
+# https://dav.123-reg.co.uk/caldav/Y2FsOi8vMC8zMQ/82623a8fdc70bc2151fe6d18c037e6198eab08fd
 
 # Type of authentication to use. Must be "basic" or "oauth2"
-#AuthMethod = basic
+AuthMethod = basic
 
 # Enable this if you want to skip SSL certificate checks.
 InsecureSSL = No
