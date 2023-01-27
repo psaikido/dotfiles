@@ -10,7 +10,8 @@ bind index,pager \Cn sidebar-next
 bind index,pager \Co sidebar-open
 bind index,pager \Ck sidebar-prev-new
 bind index,pager \Cj sidebar-next-new
-
+bind pager       \Cf display-toggle-weed
+ 
 source ./dracula.muttrc
 
 macro index,pager i1 '<sync-mailbox><enter-command>source /home/hughie/.config/mutt/accounts/hughie@carrollonline.uk.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to hughie@carrollonline.uk"
