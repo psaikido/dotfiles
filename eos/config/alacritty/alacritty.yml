@@ -114,7 +114,7 @@ font:
     # Font family
     #
     Default:
-      JetBrains Mono
+      # JetBrains Mono
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
