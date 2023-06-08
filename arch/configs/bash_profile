@@ -43,7 +43,6 @@ function start_agent {
 }
 
 # Source SSH settings, if applicable
-
 if [ -f "${SSH_ENV}" ]; then
     . "${SSH_ENV}" > /dev/null
     #ps ${SSH_AGENT_PID} doesn't work under cywgin
@@ -53,6 +52,8 @@ if [ -f "${SSH_ENV}" ]; then
 else
     start_agent;
 fi
+
+ssh-add
 
 # run the remaps script, switching caps/esc and more; check it for more info
 ~/.local/bin/remaps

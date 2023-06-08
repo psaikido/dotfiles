@@ -5,7 +5,7 @@ pip install --upgrade pynvim
 yay -S  \
 abook \
 bluejeans \
-brave-beta-bin \
+#brave \
 conky-cairo \
 dracula-gtk-theme \
 gotop \
