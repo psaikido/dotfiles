@@ -4,8 +4,8 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export VISUAL=nvim;
 export EDITOR=nvim
-export TERMINAL=foot
-export BROWSER=brave-beta
+export TERMINAL=alacritty
+export BROWSER=brave
 export RANGER_LOAD_DEFAULT_RC=FALSE
 
 # fuzzy finder
@@ -52,7 +52,7 @@ fi
 #xwallpaper --maximize $HOME/.config/wallpaper.png
 
 # run the remaps script, switching caps/esc and more; check it for more info
-# ~/.local/bin/remaps
+~/.local/bin/remaps
 
 source ~/.bashrc
 
