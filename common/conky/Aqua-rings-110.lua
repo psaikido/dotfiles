@@ -221,7 +221,7 @@ gauge = {
     caption_fg_colour=0xFFFFFF,    caption_fg_alpha=0.3,
 },
 {
-    name='fs_used_perc',           arg='/bkp',                     max_value=100,
+    name='fs_used_perc',           arg='/data',                     max_value=100,
     x=100,                          y=533,
     graph_radius=58,
     graph_thickness=7,
