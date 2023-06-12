@@ -5,16 +5,10 @@ pip install --upgrade pynvim
 yay -S  \
 abook \
 bluejeans \
-#brave \
+brave-bin \
 conky-cairo \
 dracula-gtk-theme \
-gotop \
-mutt-wizard \
-pam-gnupg \
 picom \
 python-pynvim \
 twmn-git \
 zoom
-
-# Set up pam-gnupg
-# https://github.com/cruegge/pam-gnupg

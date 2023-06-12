@@ -4,17 +4,37 @@
 sudo pacman -S \
 alacritty \
 bat \
+chromium \
+cmatrix \
 cronie \
 exa \
 feh \
+fzf \
 gnupg \
-htop \
+btop \
 hugo \
+libreoffice \
+lua \
 lynx \
+neofetch \
 neovim \
-pandox \
+nitrogen \
+noto-fonts \
+nodejs \
+npm \
+ntfs-3g \
+pandoc \
+pass \
+python \
+python3 \
 python-pip \
+ranger \
+ripgrep \
+ruby2.7 \
+rubygems \
+tldr \
 tmux \
+unzip \
 w3m \
 words \
 xcape \
@@ -23,5 +43,6 @@ xdotool \
 xsel \
 zathura \
 zathura-pdf-mupdf \
+zip \
 zoxide
 

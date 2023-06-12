@@ -29,6 +29,7 @@ alias gz='cd ~/sites/chanadmin'
 # commands
 alias ssc='sudo systemctl'
 alias sjc='sudo journalctl'
+alias sp='sudo pacman'
 
 # programs
 alias brave="brave-beta"
