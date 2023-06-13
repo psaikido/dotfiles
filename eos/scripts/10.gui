@@ -32,12 +32,15 @@ ranger \
 ripgrep \
 ruby2.7 \
 rubygems \
+pandoc \
+python-pip \
 tldr \
 tmux \
 unzip \
 w3m \
 words \
 xcape \
+xf86-video-intel \
 xclip \
 xdotool \
 xsel \
