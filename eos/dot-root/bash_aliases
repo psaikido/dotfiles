@@ -8,6 +8,11 @@ alias jj='nvim ~/crypt/journal/journal.lft'
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
+# alias cl='cd "$1" && l'
+cl() {
+	cd $1
+	l
+}
 
 # alias cl='cd "$1" && l'
 cl() {
