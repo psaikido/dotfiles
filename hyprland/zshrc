@@ -13,7 +13,7 @@ setopt autocd
 bindkey -v
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/hughie/.zshrc'
+zstyle :compinstall filename '/home/hypr/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -37,6 +37,10 @@ export PATH="$PATH:$HOME/appimages"
 export PATH="$PATH:$HOME/sites/chanadmin/public/vendor/bin"
 export GEM_HOME="$HOME/.local/share/gem"
 export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export BROWSER=brave-beta
+export TERM=foot
 
 # gpg and ssh agents
 GPG_TTY=$(tty)
@@ -67,8 +71,9 @@ else
 fi
 
 # run the remaps script, switching caps/esc and more; check it for more info
-~/.local/bin/remaps
+# ~/.local/bin/remaps
 
+# typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
