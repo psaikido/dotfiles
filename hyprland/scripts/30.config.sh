@@ -11,7 +11,6 @@ DIR=$home/.config/conky
 if test -d "$DIR"; then
     mv $DIR $DIR.bk
 fi
-mkdir -p $home/.config/conky
 ln -s $home/dotfiles/common/conky $home/.config/conky
 
 
@@ -36,7 +35,6 @@ FILE=$home/.config/ranger/rc.conf
 if test -f "$FILE"; then
     mv $FILE $FILE.bk
 fi
-mkdir -p $home/.config/ranger
 ln -s $home/dotfiles/hyprland/config/ranger $home/.config/ranger
 
 
@@ -72,4 +70,4 @@ fi
 ln -s $home/dotfiles/hyprland/config/zsh/aliasrc $home/.config/zsh/aliasrc
 
 
-chown hughie:hughie -R $home
+# chown hughie:hughie -R $home

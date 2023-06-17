@@ -26,7 +26,7 @@
 },
   
 "cpu": {
-  "format": "{usage}% 󰍛",  
+  "format": "{usage:>2}% 󰍛",  
   "interval": 1,
   "format-alt-click": "click",
   "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
@@ -147,8 +147,8 @@
   
 "clock": {
   //"format": "{:%I:%M %p}",
-  "format": " {:%H:%M}",
-  "format-alt": " {:%H:%M   %Y, %d %B, %A}",
+  "format-alt": " {:%H:%M}",
+  "format": " {:%H:%M   %Y, %d %B, %A}",
   "tooltip-format": "<tt><small>{calendar}</small></tt>",
   "calendar": {
     "mode"          : "year",
