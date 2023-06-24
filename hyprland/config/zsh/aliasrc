@@ -39,3 +39,4 @@ alias sp='sudo pacman'
 # programs
 alias brave="brave-beta"
 alias dc="docker-compose"
+alias im="nsxiv"
