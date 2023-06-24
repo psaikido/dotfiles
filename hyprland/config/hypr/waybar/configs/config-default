@@ -19,6 +19,7 @@
 	"memory",
 	//"disk", 
 	"custom/weather",
+	"moonphase",
 	],
   
 "modules-center": [
@@ -31,12 +32,12 @@
 
 "modules-right": [
 	//"hyprland/window", 
-	"tray", 
 	"battery", 
 	"backlight",
 	"pulseaudio",
 	//"wireplumber", 
 	"pulseaudio#microphone", 
+	"tray", 
 	"custom/power",
 	],
 }

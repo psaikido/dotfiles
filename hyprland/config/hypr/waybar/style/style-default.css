@@ -52,12 +52,13 @@ tooltip label{
 
 #workspaces button.focused {
   background-color: transparent;
+  color: #ff0000;
 }
 #workspace button.hover {
   background-color: transparent;
 }
 #workspaces button.active {
-  color: white;
+  color: #ff0000;
 }
 
 #workspaces button.urgent {
