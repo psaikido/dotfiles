@@ -2,8 +2,8 @@
 
 # WALLPAPERS PATH
 # DIR=$HOME/Pictures/wallpapers/theme-i3
-# DIR=$HOME/Pictures/wallpapers/theme-hypr
-DIR=$HOME/Pictures/wallpapers/theme-damo
+DIR=$HOME/Pictures/wallpapers/theme-hypr
+# DIR=$HOME/Pictures/wallpapers/theme-damo
 
 # Transition config (type swww img --help for more settings
 TYPE="any"
