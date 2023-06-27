@@ -46,5 +46,6 @@ xsel \
 zathura \
 zathura-pdf-mupdf \
 zip \
-zsh
+zsh \
+zsh-theme-powerlevel10k
 

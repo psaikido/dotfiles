@@ -3,7 +3,7 @@
 home='/home/hughie'
 cd $home
 
-git clone https://gitlab.com/dwt1/wallpapers $home/wallpapers
+ git clone https://gitlab.com/dwt1/wallpapers $home/wallpapers
 
 
 # conky
@@ -52,7 +52,7 @@ if test -f "$FILE"; then
     mv $FILE $FILE.bk
 fi
 mkdir -p $home/.tmux
-ln -s $home/dotfiles/hyprland/config/tmux.conf $home/.tmux.conf
+ln -s $home/dotfiles/hyprland/config/tmux/tmux.conf $home/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm  
 
 
@@ -62,6 +62,13 @@ if test -f "$FILE"; then
     mv $FILE $FILE.bk
 fi
 ln -s $home/dotfiles/hyprland/zshrc $home/.zshrc
+
+FILE=$home/.p10k.zsh
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+ln -s $home/dotfiles/hyprland/p10k.zsh $home/.p10k.zsh
+
 
 FILE=$home/zsh/aliasrc
 if test -f "$FILE"; then
