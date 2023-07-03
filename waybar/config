@@ -1,0 +1,39 @@
+{
+
+"include": "~/.config/waybar/modules",
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 4, // Gaps between modules (4px)
+"modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
+"fixed-center": true,
+"ipc": true,
+
+"modules-left": [
+	"sway/workspaces", 
+	//"disk", 
+	"custom/weather",
+	],
+  
+"modules-center": [
+	"custom/menu",
+	"custom/cycle_wall", 
+	"clock",	
+	"custom/light_dark",
+	"custom/lock", 	
+	], 
+
+"modules-right": [
+	"battery", 
+	"cpu", 
+	"memory",
+	"backlight",
+	"pulseaudio",
+	//"wireplumber", 
+	"pulseaudio#microphone", 
+	"tray", 
+	"custom/power",
+	],
+}
