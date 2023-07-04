@@ -1,25 +1,21 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
 # Read `man 5 sway` for a complete reference.
+
+exec --no-startup-id autotiling
 
 ### Variables
 #
-# Logo key. Use Mod1 for Alt.
 set $mod Mod1
-# Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
-# Your preferred terminal emulator
 set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi --show drun --prompt 'Search...' --conf "$HOME/.config/hypr/wofi/config" --style "$HOME/.config/hypr/wofi/style.css" --color "$HOME/.config/hypr/wofi/colors" | xargs swaymsg exec --
+
 
 ### Output configuration
 #
@@ -112,16 +108,16 @@ output * bg ~/Pictures/wallpapers/theme-i3/1.jpg fill
 # Workspaces:
 #
     # Switch to workspace
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
+    bindsym $mod+1 workspace number 1, exec ~/bin/wallspace --1
+    bindsym $mod+2 workspace number 2, exec ~/bin/wallspace --2
+    bindsym $mod+3 workspace number 3, exec ~/bin/wallspace --3
+    bindsym $mod+4 workspace number 4, exec ~/bin/wallspace --4
+    bindsym $mod+5 workspace number 5, exec ~/bin/wallspace --5
+    bindsym $mod+6 workspace number 6, exec ~/bin/wallspace --6
+    bindsym $mod+7 workspace number 7, exec ~/bin/wallspace --7
+    bindsym $mod+8 workspace number 8, exec ~/bin/wallspace --8
+    bindsym $mod+9 workspace number 9, exec ~/bin/wallspace --9
+    bindsym $mod+0 workspace number 10, exec ~/bin/wallspace --10
     # Move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace number 1
     bindsym $mod+Shift+2 move container to workspace number 2
