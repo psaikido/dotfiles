@@ -73,11 +73,11 @@ font:
     # Font family
     #
     Default:
-      # JetBrains Mono
+      JetBrains Mono
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: "MesloLGS NF"
+    # family: "MesloLGS NF"
 
   # Point size
   size: 8.7
