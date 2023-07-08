@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+foot -e nvim ~/.config/hypr/cheatsheet.md
