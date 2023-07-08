@@ -1,1 +1,36 @@
-/home/hughie/.config/hypr/waybar/configs/config-default
+{
+
+	"include": "~/.config/hypr/waybar/modules",
+	"layer": "top",
+	"exclusive": true,
+	"passthrough": false,
+	"position": "top",
+	"spacing": 4, 
+	"fixed-center": true,
+	"ipc": true,
+
+	"modules-left": [
+		"wlr/workspaces", 
+		"custom/weather",
+		"custom/moonphase",
+	],
+
+	"modules-center": [
+		"custom/menu",
+		"custom/cycle_wall", 
+		"clock",	
+		"custom/light_dark",
+		"custom/lock", 	
+	], 
+
+	"modules-right": [
+		"battery", 
+		"cpu", 
+		"memory",
+		"backlight",
+		"pulseaudio",
+		"pulseaudio#microphone", 
+		"tray", 
+		"custom/power",
+	],
+}

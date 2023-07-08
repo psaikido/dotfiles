@@ -43,3 +43,4 @@ alias dc="docker-compose"
 alias im="nsxiv"
 alias fx="felix"
 alias na="nvim ~/.config/zsh/aliasrc" # this file
+alias nc="sudoedit /etc/nixos/configuration.nix"

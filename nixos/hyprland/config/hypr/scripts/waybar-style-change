@@ -31,7 +31,7 @@ else
 fi
 
 # Restart waybar
-killall waybar
+pkill waybar
 exec ~/.config/hypr/scripts/statusbar
 
 
