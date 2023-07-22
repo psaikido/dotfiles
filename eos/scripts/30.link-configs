@@ -5,7 +5,7 @@ cd $home
 
 # git clone https://github.com/psaikido/dotfiles $home/dotfiles
 # git clone git@bitbucket.org/psaikido/bin $home/bin
-git clone https://gitlab.com/dwt1/wallpapers $home/wallpapers
+# git clone https://gitlab.com/dwt1/wallpapers $home/wallpapers
 
 # dotfiles
 FILE=$home/.bashrc
@@ -18,7 +18,7 @@ FILE=$home/.bash_aliases
 if test -f "$FILE"; then
     mv $FILE $FILE.bk
 fi
-ln -s $home/dotfiles/eos/dot-root/bash_aliases $home/.bash_aliases
+ln -s $home/dotfiles/hyprland/config/zsh/aliasrc $home/.bash_aliases
 
 FILE=$home/.profile
 if test -f "$FILE"; then
@@ -26,13 +26,6 @@ if test -f "$FILE"; then
 fi
 ln -s $home/dotfiles/eos/dot-root/bash_profile $home/.profile
 
-# alacritty
-FILE=$home/.config/alacritty/alacritty.yml
-if test -f "$FILE"; then
-    mv $FILE $FILE.bk
-fi
-mkdir -p $home/.config/alacritty
-ln -s $home/dotfiles/eos/config/alacritty/alacritty.yml $home/.config/alacritty/alacritty.yml
 
 
 # i3
@@ -49,51 +42,3 @@ if test -f "$FILE"; then
 fi
 ln -s $home/dotfiles/eos/config/i3/i3blocks.conf $home/.config/i3/i3blocks.conf
 
-
-# ranger
-sudo -u hughie mkdir $home/.config/ranger
-sudo -u hughie ranger --copy-config=all
-FILE=$home/.config/ranger/rc.conf
-if test -f "$FILE"; then
-    mv $FILE $FILE.bk
-fi
-mkdir -p $home/.config/ranger
-ln -s $home/dotfiles/eos/config/ranger/rc.conf $home/.config/ranger/rc.conf
-
-FILE=$home/.config/ranger/rifle.conf
-if test -f "$FILE"; then
-    mv $FILE $FILE.bk
-fi
-ln -s $home/dotfiles/eos/config/ranger/rifle.conf $home/.config/ranger/rifle.conf
-
-
-# tmux
-FILE=$home/.tmux.conf
-if test -f "$FILE"; then
-    mv $FILE $FILE.bk
-fi
-mkdir -p $home/.tmux
-ln -s $home/dotfiles/eos/dot-root/tmux.conf $home/.tmux.conf
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm  
-
-
-# remap keys change caps lock to another escape
-FILE=$home/.local/bin/remaps
-if test -f "$FILE"; then
-    mv $FILE $FILE.bk
-fi
-mkdir -p $home/.local
-mkdir -p $home/.local/bin
-ln -s ~/dotfiles/eos/local/bin/remaps ~/.local/bin/remaps
-
-
-# conky
-DIR=$home/.config/conky
-if test -d "$DIR"; then
-    mv $DIR $DIR.bk
-fi
-mkdir -p $home/.config/conky
-ln -s $home/dotfiles/common/conky $home/.config/conky
-
-
-chown hughie:hughie -R $home
