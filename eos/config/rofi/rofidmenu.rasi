@@ -3,7 +3,7 @@
  * Maintainer: joekamprad <joekamprad@endeavouros.com>
  *******************************************************/
 configuration {
-    font:                "Noto Sans Regular 10";
+    font:                "Noto Sans Regular 12";
     show-icons:          true;
     icon-theme:          "Qogir";
     display-drun:        "Apps";
@@ -21,8 +21,8 @@ window {
     padding:          30;
 }
 listview {
-    lines:   10;
-    columns: 3;
+    lines:   20;
+    columns: 1;
 }
 mainbox {
     border:  0;

@@ -1,6 +1,6 @@
 [user]
+	email = hughie@carrollonline.co.uk
 	name = Hugh Carroll
-	email = hughie@carrollonline.uk
 [core]
 	editor = nvim
 [pull]
