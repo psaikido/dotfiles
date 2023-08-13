@@ -22,6 +22,17 @@ compinit
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
+export VISUAL=nvim;
+export EDITOR=nvim
+export TERMINAL=alacritty
+export BROWSER=brave
+export RANGER_LOAD_DEFAULT_RC=FALSE
+
+# fuzzy finder
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden --color=always'
+# source /usr/share/fzf/completion.bash
+# source /usr/share/fzf/key-bindings.bash
+#export FZF_DEFAULT_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
 # Load aliases and shortcuts if existent.
 [ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
 
