@@ -1,0 +1,47 @@
+# navigation
+alias l='exa --long --group --group-directories-first'
+alias la='exa -la --group --group-directories-first'
+alias lt='exa --tree'
+alias vi='nvim'
+alias rn='ranger'
+alias jj='nvim ~/crypt/journal/journal.lft'
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# change dir and list
+cl() {
+	cd $1
+	l
+}
+
+# fuzzy search dir and list
+fcl() {
+	cl $(find -type d | fzf)
+}
+
+
+# directories
+alias gb='cd ~/bin'
+alias gc='cd ~/.config'
+alias gd='cd ~/dotfiles'
+alias gh='cd ~/sites/hugle.uk'
+alias gk='cd ~/sites/carrollonline.uk/club38.carrollonline.uk'
+alias gn='cd ~/.config/nvim'
+alias gp='cd ~/.local/share/nvim/site/pack/packer/start/'
+alias gP='cd ~/code/nvim-plugins-hc'
+alias gz='cd ~/sites/chanadmin'
+
+# commands
+alias ssc='sudo systemctl'
+alias sjc='sudo journalctl'
+alias sp='sudo pacman'
+
+# programs
+alias brave="brave-beta"
+alias dc="docker-compose"
+alias de="docker exec -it chanadmin-www-1 /bin/bash"
+alias im="nsxiv"
+alias fx="felix"
+alias lg="lazygit"
+alias na="nvim ~/.config/zsh/aliasrc" # this file
