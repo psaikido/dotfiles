@@ -13,13 +13,13 @@
 "margin-right": 10,
 
 "modules-left": [
-	"wlr/workspaces", 
-	"cpu", 
-	"temperature", 
+	"hyprland/workspaces", 
+	//"cpu", 
+	//"temperature", 
 	"memory",
 	//"disk", 
 	"custom/weather",
-	"moonphase",
+	"custom/moonphase",
 	],
   
 "modules-center": [

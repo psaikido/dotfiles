@@ -82,7 +82,7 @@
 			"tooltip" : true,
 		},
 
-		"wlr/workspaces": {
+		"hyprland/workspaces": {
 			"format": "{name}",
 			//"format": "{name}: {icon}",
 			"on-click": "activate",
