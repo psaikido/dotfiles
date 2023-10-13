@@ -6,7 +6,7 @@ DIR=$HOME/Pictures/wallpapers/theme-hypr
 # DIR=$HOME/Pictures/wallpapers/theme-damo
 
 # Transition config (type swww img --help for more settings
-TYPE="any"
+TYPE="none"
 DURATION=0
 STEP=255
 
