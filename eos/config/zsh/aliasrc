@@ -30,7 +30,7 @@ alias gk='cd ~/sites/carrollonline.uk/club38.carrollonline.uk'
 alias gn='cd ~/.config/nvim'
 alias gp='cd ~/.local/share/nvim/site/pack/packer/start/'
 alias gP='cd ~/code/nvim-plugins-hc'
-alias gz='cd ~/sites/chanadmin.git/main'
+alias gz='cd ~/sites/chanadmin/'
 
 # commands
 alias ssc='sudo systemctl'
