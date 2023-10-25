@@ -1,6 +1,6 @@
 #!/bin/bash
 
-home='/home/hughie'
+home='/home/psaikido'
 cd $home
 
 # git clone https://github.com/psaikido/dotfiles $home/dotfiles
@@ -26,19 +26,4 @@ if test -f "$FILE"; then
 fi
 ln -s $home/dotfiles/eos/dot-root/bash_profile $home/.profile
 
-
-
-# i3
-FILE=$home/.config/i3/config
-if test -f "$FILE"; then
-    mv $FILE $FILE.bk
-fi
-mkdir -p $home/.config/i3
-ln -s $home/dotfiles/eos/config/i3/config $home/.config/i3/config
-
-FILE=$home/.config/i3/i3blocks.conf
-if test -f "$FILE"; then
-    mv $FILE $FILE.bk
-fi
-ln -s $home/dotfiles/eos/config/i3/i3blocks.conf $home/.config/i3/i3blocks.conf
 
