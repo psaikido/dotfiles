@@ -44,6 +44,7 @@ screens = [
                     },
                     background="#2f343f"),
                 widget.Systray(icon_size = 20),
+                widget.Notify(),
                 widget.BatteryIcon(),
                 widget.Battery(format="{char} {percent:2.0%} {hour:d}:{min:02d}"),
                 widget.Wallpaper(label="| wall"),
