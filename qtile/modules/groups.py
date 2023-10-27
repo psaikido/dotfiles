@@ -2,7 +2,7 @@ from libqtile import qtile, hook
 from libqtile.config import Key, Group
 from libqtile.command import lazy
 from .keys import keys, mod
-from libqtile.utils import send_notification
+# from libqtile.utils import send_notification
 from os.path import expanduser
 
 
