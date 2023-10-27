@@ -1,5 +1,6 @@
 from libqtile.lazy import lazy
 from libqtile.config import Key
+import os
 
 mod = "mod1"
 terminal = "alacritty"
@@ -72,4 +73,6 @@ keys = [
     Key([], "XF86AudioMute",lazy.spawn("amixer set Master toggle")),
     Key([], "XF86MonBrightnessUp",lazy.spawn("xbacklight -inc 5")),
     Key([], "XF86MonBrightnessDown",lazy.spawn("xbacklight -dec 5")),
+
+    Key([mod], "o", lazy.spawn(os.path.expanduser("~/bin/bookmarks"))),
 ]
