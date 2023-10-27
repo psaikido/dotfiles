@@ -3,12 +3,12 @@ from libqtile.config import Key, Group
 from libqtile.command import lazy
 from .keys import keys, mod
 from libqtile.utils import send_notification
-import os
+from os.path import expanduser
 
 
 groups = [Group(i) for i in "123456789"]
-wall_path = os.path.expanduser('~/Pictures/wallpapers/theme-hypr/')
-# wall_path = os.path.expanduser('~/Pictures/wallpapers/theme-i3/')
+wall_path = expanduser('~/Pictures/wallpapers/theme-hypr/')
+# wall_path = expanduser('~/Pictures/wallpapers/theme-i3/')
 wallpapers = [
     wall_path + '1.jpg',
     wall_path + '2.jpg',
