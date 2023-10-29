@@ -474,7 +474,7 @@ set $urgentred		#e53935
 set $white		#ffffff
 set $black		#000000
 set $purple		#e345ff
-set $darkgrey		#383c4a
+set $darkgrey		#383c4a99
 set $grey		#b0b5bd
 set $mediumgrey		#8b8b8b
 set $yellowbrown	#e1b700
@@ -497,7 +497,7 @@ bar {
 	font pango: JetBrains Mono 10
 	status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	position top
-	# i3bar_command i3bar --transparency
+	i3bar_command i3bar --transparency
 	# it could be that you have no primary display set: set one (xrandr --output <output> --primary)
 	# reference: https://i3wm.org/docs/userguide.html#_tray_output
 	#tray_output primary
