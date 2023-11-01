@@ -27,8 +27,8 @@
 
 	"modules-right": [
 		"battery", 
-		"cpu", 
-		"memory",
+		// "cpu", 
+		// "memory",
 		"backlight",
 		"pulseaudio",
 		"pulseaudio#microphone", 
