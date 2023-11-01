@@ -13,14 +13,14 @@ set $filemgr thunar
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu wofi --show drun --prompt 'Search...' --conf "$HOME/.config/hypr/wofi/config" --style "$HOME/.config/hypr/wofi/style.css" --color "$HOME/.config/hypr/wofi/colors" | xargs swaymsg exec --
+set $menu wofi --show drun --prompt 'Search...' --conf "$HOME/.config/wofi/config" --style "$HOME/.config/wofi/style.css" --color "$HOME/.config/wofi/colors" | xargs swaymsg exec --
 
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/Pictures/wallpapers/theme-i3/1.jpg fill
+output * bg ~/Pictures/wallpapers/theme-blackarch/3.jpg fill
 #
 # Example configuration:
 #
@@ -46,7 +46,7 @@ output * bg ~/Pictures/wallpapers/theme-i3/1.jpg fill
 		xkb_layout "gb"
 	}
 
-	input "1267:12642:ELAN0412:00_04F3:3162_Touchpad" {
+	input "1267:12642:ETD0464:00_04F3:3162_Touchpad" {
 		tap enabled
 		natural_scroll enabled
 	}
