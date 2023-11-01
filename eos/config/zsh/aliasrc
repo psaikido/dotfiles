@@ -11,6 +11,7 @@ alias ....="cd ../../.."
 
 # change dir and list
 cl() {
+	clear
 	cd $1
 	l
 }
