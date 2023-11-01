@@ -32,6 +32,7 @@
 		"backlight",
 		"pulseaudio",
 		"pulseaudio#microphone", 
+		"network",
 		"tray", 
 		"custom/power",
 	],

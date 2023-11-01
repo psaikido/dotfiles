@@ -21,10 +21,13 @@ RANDOM_PIC=${PICS[ $RANDOM % ${#PICS[@]} ]}
 RANDOM_PIC_NAME="${#PICS[@]}. random"
 
 
-# WOFI STYLES
-CONFIG="$HOME/.config/hypr/wofifull/config"
-STYLE="$HOME/.config/hypr/wofifull/style.css"
-COLORS="$HOME/.config/hypr/wofifull/colors"
+# # WOFI STYLES
+# CONFIG="$HOME/.config/hypr/wofifull/config"
+# STYLE="$HOME/.config/hypr/wofifull/style.css"
+# COLORS="$HOME/.config/hypr/wofifull/colors"
+
+roficonf="$HOME/.config/rofi/rofidmenu.rasi"
+
 
 # to check if swaybg is running
 
@@ -33,13 +36,15 @@ if [[ $(pidof swaybg) ]]; then
 fi
 
 ## Wofi Command
-wofi_command="wofi --show dmenu \
-			--prompt choose...
-			--conf $CONFIG --style $STYLE --color $COLORS \
-			--width=$WIDTH% --height=$HEIGHT% \
-			--cache-file=/dev/null \
-			--hide-scroll --no-actions \
-			--matching=fuzzy"
+# wofi_command="wofi --show dmenu \
+# 			--prompt choose...
+# 			--conf $CONFIG --style $STYLE --color $COLORS \
+# 			--width=$WIDTH% --height=$HEIGHT% \
+# 			--cache-file=/dev/null \
+# 			--hide-scroll --no-actions \
+# 			--matching=fuzzy"
+
+rofi_command="rofi -dmenu -p choose $roficonf"
 
 menu(){
     # Here we are looping in the PICS array that is composed of all images in the $DIR
@@ -59,7 +64,7 @@ menu(){
 swww query || swww init
 
 main() {
-    choice=$(menu | ${wofi_command})
+    choice=$(menu | ${rofi_command})
 
     # no choice case
     if [[ -z $choice ]]; then return; fi
@@ -74,9 +79,9 @@ main() {
     swww img ${DIR}/${PICS[$pic_index]} $SWWW_PARAMS
 }
 
-# Check if wofi is already running
-if pidof wofi >/dev/null; then
-    killall wofi
+# Check if rofi is already running
+if pidof rofi >/dev/null; then
+    killall rofi
     exit 0
 else
     main
