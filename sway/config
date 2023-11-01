@@ -46,6 +46,8 @@ output * bg ~/Pictures/wallpapers/theme-i3/1.jpg fill
 ### Input configuration
 	input * {
 		xkb_layout "gb"
+		repeat_delay 180
+		repeat_rate 50
 	}
 
 	# input "1267:12642:ETD0464:00_04F3:3162_Touchpad" { # for i3, but sway is:
