@@ -13,14 +13,16 @@ set $filemgr thunar
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 # set $menu dmenu_path | dmenu | xargs swaymsg exec --
-set $menu wofi --show drun --prompt 'Search...' --conf "$HOME/.config/wofi/config" --style "$HOME/.config/wofi/style.css" --color "$HOME/.config/wofi/colors" | xargs swaymsg exec --
+# set $menu wofi --show drun --prompt 'Search...' --conf "$HOME/.config/wofi/config" --style "$HOME/.config/wofi/style.css" --color "$HOME/.config/wofi/colors" | xargs swaymsg exec --
+
+set $menu rofi -modi drun -show drun -config ~/.config/rofi/rofidmenu.rasi
 
 
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 #output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg ~/Pictures/wallpapers/theme-blackarch/3.jpg fill
+output * bg ~/Pictures/wallpapers/theme-blackarch/1.jpg fill
 #
 # Example configuration:
 #
@@ -203,9 +205,6 @@ bar {
 	 swaybar_command waybar
 }
 
-# hc
-bindsym $mod+o exec ~/bin/bookmarks 
-
 # Backlight control
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
@@ -215,5 +214,11 @@ bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ 
 bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 
 gaps inner 5
+
+# hc
+bindsym $mod+o exec ~/bin/bookmarks 
+exec swww init
+bindsym $mod+x exec "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown" 
+
 
 include /etc/sway/config.d/*
