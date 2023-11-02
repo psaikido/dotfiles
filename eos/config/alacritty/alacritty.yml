@@ -80,7 +80,7 @@ font:
     # family: "MesloLGS NF"
 
   # Point size
-  size: 9
+  size: 10
 
 selection:
   # This string contains all characters that are used as separators for
