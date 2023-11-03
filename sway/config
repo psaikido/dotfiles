@@ -50,7 +50,9 @@ output * bg ~/Pictures/wallpapers/theme-i3/1.jpg fill
 		repeat_rate 50
 	}
 
-	# input "1267:12642:ETD0464:00_04F3:3162_Touchpad" { # for i3, but sway is:
+	# rigel:
+	# input "1267:12642:ETD0464:00_04F3:3162_Touchpad" {
+	# sirius:
 	input "1267:12642:ELAN0412:00_04F3:3162_Touchpad" {
 		tap enabled
 		natural_scroll enabled
@@ -64,7 +66,7 @@ output * bg ~/Pictures/wallpapers/theme-i3/1.jpg fill
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec $term -D ~
 
 		# File manager
 		bindsym $mod+t exec $filemgr
@@ -222,6 +224,7 @@ gaps inner 5
 bindsym $mod+o exec ~/bin/bookmarks 
 exec swww init
 bindsym $mod+x exec "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown" 
+exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
 
 
 include /etc/sway/config.d/*
