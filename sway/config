@@ -224,7 +224,6 @@ gaps inner 5
 bindsym $mod+o exec ~/bin/bookmarks 
 exec swww init
 bindsym $mod+x exec "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown" 
-exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
 
 
 include /etc/sway/config.d/*
