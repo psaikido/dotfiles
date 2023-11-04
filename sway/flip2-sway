@@ -1,0 +1,22 @@
+#!/bin/sh
+
+CONFIGDIR=$HOME/.config
+SOURCEDIR=$HOME/dotfiles
+
+link() {
+	DIR=$CONFIGDIR/$1
+	
+	if [ -d $DIR ]; then
+		mv $DIR $DIR.bk
+	fi
+
+	ln -s $SOURCEDIR/common/$1 $DIR
+}
+
+link "btop"
+link "foot"
+link "redshift"
+link "rofi"
+link "sway"
+link "waybar"
+
