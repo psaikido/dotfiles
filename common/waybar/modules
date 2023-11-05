@@ -125,9 +125,9 @@
 				"warning": 30,
 				"critical": 15
 			},
-			"format": "{icon}  {capacity}%",
+			"format": "{icon}   {capacity}%",
 			"format-charging": " {capacity}%",
-			"format-plugged": " {capacity}%",
+			"format-plugged": "  {capacity}%",
 			"format-full": "{icon} Full",
 			//"format-good": "",
 			"format-alt": "{icon} {time}",
@@ -141,7 +141,7 @@
 			//"format": "{:%I:%M %p}",
 			"format-alt": " {:%H:%M}",
 			//"format": " {:%H:%M   %Y, %d %B, %A}",
-			"format": " {:%Y-%m-%d, %a  %H:%M}",
+			"format": "  {:%Y-%m-%d, %a  %H:%M}",
 			"tooltip-format": "<tt><small>{calendar}</small></tt>",
 			"calendar": {
 				"mode"          : "year",
