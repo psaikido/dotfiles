@@ -79,7 +79,7 @@ fi
 
 # run the remaps script, switching caps/esc and more; check it for more info
 # ~/.local/bin/remaps
-~/bin/wechall
+# ~/bin/wechall
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
