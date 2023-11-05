@@ -13,10 +13,17 @@ link() {
 	ln -s $SOURCEDIR/common/$1 $DIR
 }
 
-link "btop"
-link "foot"
-link "redshift"
-link "rofi"
-link "sway"
-link "waybar"
+declare -a configs=(
+	"btop"
+	"foot"
+	"redshift"
+	"rofi"
+	"waybar"
+)
 
+for val in "${configs[@]}"	
+do
+	link $val
+done
+
+ln -s $SOURCEDIR/sway $CONFIGDIR/sway
