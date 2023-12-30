@@ -28,7 +28,7 @@ alias gd='cd ~/dotfiles'
 alias gh='cd ~/sites/hugle.uk'
 alias gk='cd ~/sites/carrollonline.uk/club38.carrollonline.uk'
 alias gn='cd ~/.config/nvim'
-alias gp='cd ~/.local/share/nvim/site/pack/packer/start/'
+alias gs='cd ~/.local/share/nvim/lazy'
 alias gP='cd ~/code/nvim-plugins-hc'
 alias gz='cd ~/sites/chanadmin'
 
