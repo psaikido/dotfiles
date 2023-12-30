@@ -45,15 +45,16 @@ output * bg ~/Pictures/wallpapers/theme-i3/1.jpg fill
 
 ### Input configuration
 	input * {
-		xkb_layout "gb"
+		xkb_layout "gb,shavian"
+		xkb_numlock enabled
 		repeat_delay 280
 		repeat_rate 50
 	}
 
 	# rigel:
-	# input "1267:12642:ETD0464:00_04F3:3162_Touchpad" {
+	input "1267:12642:ETD0464:00_04F3:3162_Touchpad" {
 	# sirius:
-	input "1267:12642:ELAN0412:00_04F3:3162_Touchpad" {
+	# input "1267:12642:ELAN0412:00_04F3:3162_Touchpad" {
 		tap enabled
 		natural_scroll enabled
 	}
@@ -68,8 +69,8 @@ output * bg ~/Pictures/wallpapers/theme-i3/1.jpg fill
     # Start a terminal
     bindsym $mod+Return exec $term -D ~
 
-		# File manager
-		bindsym $mod+t exec $filemgr
+	# File manager
+	bindsym $mod+t exec $filemgr
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -224,6 +225,6 @@ gaps inner 5
 bindsym $mod+o exec ~/bin/bookmarks 
 exec swww init
 bindsym $mod+x exec "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown" 
-
+bindsym Mod4+space input * xkb_switch_layout next
 
 include /etc/sway/config.d/*
