@@ -1,3 +1,0 @@
-set $keyboard_input_rigel "1267:12642:ETD0464:00_04F3:3162_Touchpad"
-set $keyboard_input_sirius "1267:12642:ELAN0412:00_04F3:3162_Touchpad"
-set $keyboard_input $keyboard_input_rigel

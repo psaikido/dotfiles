@@ -19,11 +19,7 @@ input * {
 	repeat_rate 50
 }
 
-include ./keyboard
-input $keyboard_input {
-	tap enabled
-	natural_scroll enabled
-}
+include ./keyboard_`hostname`
 
 bindsym $mod+Return exec $term -D ~
 bindsym $mod+t exec $filemgr
