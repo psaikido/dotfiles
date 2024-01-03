@@ -1,0 +1,17 @@
+[env]
+TERM = "alacritty"
+
+[font]
+size = 13
+normal = { family = "FairfaxHD", style = "regular" }
+
+[selection]
+save_to_clipboard = true
+
+[window]
+dynamic_title = true
+opacity = 0.9
+
+[window.padding]
+x = 4
+y = 4
