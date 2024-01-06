@@ -19,7 +19,7 @@ input * {
 	repeat_rate 50
 }
 
-include ./keyboard_`hostname`
+include ./touchpad_`hostname`
 
 bindsym $mod+Return exec $term -D ~
 bindsym $mod+t exec $filemgr
