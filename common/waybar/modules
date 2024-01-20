@@ -76,7 +76,7 @@
 
 		"custom/moonphase": {
 			"format": "{}",
-			"on-click": "brave https://moonphases.co.uk/",
+			"on-click": "brave-browser-nightly https://moonphases.co.uk/",
 			"interval": 3600,
 			"exec": "~/.config/waybar/scripts/moonphase",
 			"tooltip" : true,
