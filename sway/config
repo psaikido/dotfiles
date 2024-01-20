@@ -112,8 +112,8 @@ bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ 
 gaps inner 5
 
 # hc
-bindsym $mod+o exec ~/bin/bookmarks 
 exec swww init
+bindsym $mod+o exec ~/bin/bookmarks 
 bindsym $mod+x exec "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown" 
 bindsym Mod4+space input * xkb_switch_layout next
 
