@@ -2,7 +2,7 @@
 TERM = "alacritty"
 
 [font]
-size = 13
+size = 11
 normal = { family = "FairfaxHD", style = "regular" }
 
 [selection]
