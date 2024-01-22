@@ -23,7 +23,7 @@ def phaseImg(pos):
    index = (pos * dec(8)) + dec("0.5")
    index = math.floor(index)
    return {
-      0: "\ue38d ", # "New Moon", 
+      0: "\ue3d5 ", # "New Moon", 
       1: "\ue38e ", # "Waxing Crescent", 
       2: "\ue394 ", # "First Quarter", 
       3: "\ue396 ", # "Waxing Gibbous", 
