@@ -528,7 +528,7 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 # }
 
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
-# exec_always --no-startup-id redshift
+exec_always --no-startup-id redshift
 
 # you can add different bars for multidisplay setups on each display:
 # set output HDMI-0 to the display you want the bar, --transparency can be set.
@@ -543,10 +543,10 @@ exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 ## rofi bindings fancy application menu ($mod+d /F9 optional disabled)
 
 bindsym $mod+d exec rofi -modi drun -show drun \
-		-config ~/.config/rofi/rofidmenu.rasi
+	-config ~/.config/rofi/rofidmenu.rasi
 
-#bindsym F9 exec rofi -modi drun -show drun \
-#		-config ~/.config/rofi/rofidmenu.rasi
+bindsym $mod+Shift+d exec rofi -modi run -show run \
+	-config ~/.config/rofi/rofidmenu.rasi
 
 ## rofi bindings for window menu ($mod+t /F10 optional disabled)
 
@@ -557,7 +557,6 @@ bindsym $mod+t exec rofi -show window \
 #		-config ~/.config/rofi/rofidmenu.rasi
 
 bindsym $mod+o exec ~/bin/bookmarks 
-bindsym $mod+m exec ~/bin/tmux-rofi 
 bindsym $mod+Shift+o exec ~/bin/rofi-h-scripts 
 
 smart_borders on
