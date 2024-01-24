@@ -1,2 +1,3 @@
 eos/config/i3/i3walls
 **/__pycache__
+common/polybar/scripts/env.sh
