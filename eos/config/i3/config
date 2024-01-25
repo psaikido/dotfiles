@@ -189,6 +189,7 @@ bindsym $mod+r mode "resize"
 # start a terminal
 #bindsym $mod+Return exec xfce4-terminal
 bindsym $mod+Return exec alacritty 
+bindsym Control+Shift+Return exec alacritty --class="dropdown"
 
 # scratchpad
 exec --no-startup-id alacritty --class="dropdown"
@@ -379,7 +380,7 @@ exec --no-startup-id numlockx on
 exec "setxkbmap -option 'grp:alt_space_toggle' -layout gb,shavian -variant sh21"
 
 # start conky:
-exec_always --no-startup-id ~/bin/conkyh &
+# exec_always --no-startup-id ~/bin/conkyh &
 
 # start a script to setup displays
 # uncomment the next line, use arandr to setup displays and save the file as monitor:
@@ -522,7 +523,7 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 # }
 
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
-exec_always --no-startup-id redshift
+# exec_always --no-startup-id redshift
 
 # you can add different bars for multidisplay setups on each display:
 # set output HDMI-0 to the display you want the bar, --transparency can be set.
