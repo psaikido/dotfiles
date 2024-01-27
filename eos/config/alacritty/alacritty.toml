@@ -2,8 +2,8 @@
 TERM = "alacritty"
 
 [font]
-size = 10
-normal = { family = "FairfaxHD", style = "regular" }
+size = 9
+normal = { family = "Jetbrains Mono", style = "regular" }
 
 [selection]
 save_to_clipboard = true
