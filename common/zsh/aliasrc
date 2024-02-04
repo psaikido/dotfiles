@@ -1,4 +1,4 @@
-# navigation
+# navigation alias l='exa --long --group --group-directories-first'
 alias l='exa --long --group --group-directories-first'
 alias la='exa -la --group --group-directories-first'
 alias lt='exa --tree'
@@ -26,10 +26,9 @@ alias gb='cd ~/bin'
 alias gc='cd ~/.config'
 alias gd='cd ~/dotfiles'
 alias gh='cd ~/sites/hugle.uk'
-alias gk='cd ~/sites/carrollonline.uk/club38.carrollonline.uk'
 alias gn='cd ~/.config/nvim'
 alias gs='cd ~/.local/share/nvim/lazy'
-alias gP='cd ~/code/nvim-plugins-hc'
+alias gx='cd /usr/share/X11/xkb'
 alias gz='cd ~/sites/chanadmin'
 
 # commands
