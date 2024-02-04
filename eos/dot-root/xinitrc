@@ -30,9 +30,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-# uk keymap
-#setxkbmap gb, shavian & halmak
 # setxkbmap -option 'grp:alt_space_toggle' -layout gb,halmak,shavian -variant sh21
+setxkbmap -option "caps:escape"
 
 # Decrease key repeat delay to 300ms and increase key repeat rate to 50 per second.
 xset r rate 300 50
