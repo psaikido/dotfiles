@@ -31,14 +31,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 # uk keymap
-# setxkbmap gb, shavian & halmak
+#setxkbmap gb, shavian & halmak
+setxkbmap -option 'grp:alt_space_toggle' -layout gb,halmak,shavian -variant sh21
 
-# compositor
+# Decrease key repeat delay to 300ms and increase key repeat rate to 50 per second.
+xset r rate 300 50
+
+redshift &
 picom -f &
-
-# wallpaper
-xwallpaper --maximize $HOME/.config/wallpaper.png &
 gtk-application-prefer-dark-theme = true
 
-# exec qtile start
 exec i3
