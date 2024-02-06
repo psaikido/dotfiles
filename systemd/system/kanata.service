@@ -1,0 +1,10 @@
+[Unit]
+Description=Kanata Service
+
+[Service]
+rxecStartPre=/usr/bin/modprobe uinput
+ExecStart=/home/hughie/.cargo/bin/kanata -c /home/hughie/.config/kanata/hc.kbd
+Restart=no
+
+[Install]
+WantedBy=multi-user.target

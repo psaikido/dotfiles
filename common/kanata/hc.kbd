@@ -1,0 +1,57 @@
+(defsrc
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+;; This layer is the standard QWERTY layout except for the
+;; backtick/grave key (@grl) which is an alias for a tap-hold key.
+(deflayer qwerty
+  @grl 1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+;; @cap. This key retains caps lock functionality when
+;; quickly tapped but is read as left-control when held.
+(deflayer halmak
+  @grl 1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  w    l    r    b    z    ;    q    u    d    j    [    ]    
+  @cap s    h    n    t    ,    .    a    e    o    i    '    ret
+  lsft f    m    v    c    /    g    p    x    k    y    rsft
+  lctl lmet lalt           spc            ralt rmet rctl
+)
+
+;; Aliases are referred to by `@<alias_name>`.
+(defalias
+  ;; tap: backtick (grave), hold: toggle layer-switching layer while held
+  grl (tap-hold 200 200 grv (layer-toggle layers))
+
+  ;; layer-switch changes the base layer.
+  hal (layer-switch halmak)
+  qwr (layer-switch qwerty)
+
+  ;; tap for capslk, hold for lctl
+  cap (tap-hold 200 200 caps lctl)
+)
+
+;; The `lrld` action stands for "live reload". This will re-parse everything
+;; except for linux-dev, meaning you cannot live reload and switch keyboard
+;; devices.
+;;
+;; The keys 1 and 2 switch the base layer to qwerty and dvorak respectively.
+;;
+;; Apart from the layer switching and live reload, all other keys are the
+;; underscore _ which means "transparent". Transparent means the base layer
+;; behaviour is used when pressing that key.
+(deflayer layers
+  _    @qwr @hal lrld _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _    _    
+  _    _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _    _    _    _    _    _    _    _    _    _
+  _    _    _              _              _    _    _
+)
