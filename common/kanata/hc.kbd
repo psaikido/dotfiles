@@ -6,43 +6,33 @@
   lctl lmet lalt           spc            ralt rmet rctl
 )
 
-;; This layer is the standard QWERTY layout except for the
-;; backtick/grave key (@grl) which is an alias for a tap-hold key.
-(deflayer qwerty
-  caps 1    2    3    4    5    6    7    8    9    0    -    =    bspc
-  tab  q    w    e    r    t    y    u    i    o    p    [    ]    
-  esc  a    s    d    f    g    h    j    k    l    ;    '    ret
-  lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           @grl            ralt rmet rctl
-)
-
-;; @cap. This key retains caps lock functionality when
-;; quickly tapped but is read as left-control when held.
 (deflayer halmak
   caps 1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  w    l    r    b    z    ;    q    u    d    j    [    ]    
   esc  s    h    n    t    ,    .    a    e    o    i    '    ret
   lsft f    m    v    c    /    g    p    x    k    y    rsft
-  lctl lmet lalt           @grl            ralt rmet rctl
+  lctl lmet lalt           @trg            ralt rmet rctl
 )
 
+(deflayer qwerty
+  caps 1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    
+  esc  a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           @trg            ralt rmet rctl
+)
 
 (defalias
-  ;; tap: space, hold: toggle layer-switching layer while held
-  grl (tap-hold 200 200 spc (layer-toggle layers))
+  trg (tap-hold 200 200 spc (layer-toggle layers))
 
-  ;; layer-switch changes the base layer.
   hal (layer-switch halmak)
   qwr (layer-switch qwerty)
-
-  ;; tap for capslk, hold for lctl
-  cap (tap-hold 200 200 caps lctl)
 )
 
 ;; The `lrld` action stands for "live reload".
-;; The keys 1 and 2 switch the base layer to qwerty and dvorak respectively.
+;; The keys 1 and 2 switch the base layer to qwerty and halmak respectively.
 (deflayer layers
-  _    @qwr @hal lrld _    _    _    _    _    _    _    _    _    _
+  _    @hal @qwr lrld _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    
   _    _    _    _    _    _    lft  down up   rght _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _
