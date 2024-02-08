@@ -1,7 +1,7 @@
 (defsrc
   grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    
-  caps a    s    d    f    g    h    j    k    l    ;    '    #	   ret
+  caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
   lctl lmet lalt           spc            ralt rmet rctl
 )
@@ -11,9 +11,9 @@
 (deflayer qwerty
   caps 1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    
-  @grl a    s    d    f    g    h    j    k    l    ;    '    #    ret
+  esc  a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            ralt rmet rctl
+  lctl lmet lalt           @grl            ralt rmet rctl
 )
 
 ;; @cap. This key retains caps lock functionality when
@@ -21,15 +21,15 @@
 (deflayer halmak
   caps 1    2    3    4    5    6    7    8    9    0    -    =    bspc
   tab  w    l    r    b    z    ;    q    u    d    j    [    ]    
-  @grl s    h    n    t    ,    .    a    e    o    i    '    /    ret
+  esc  s    h    n    t    ,    .    a    e    o    i    '    ret
   lsft f    m    v    c    /    g    p    x    k    y    rsft
-  lctl lmet lalt           spc            ralt rmet rctl
+  lctl lmet lalt           @grl            ralt rmet rctl
 )
 
 
 (defalias
-  ;; tap: backtick (grave), hold: toggle layer-switching layer while held
-  grl (tap-hold 200 200 grv (layer-toggle layers))
+  ;; tap: space, hold: toggle layer-switching layer while held
+  grl (tap-hold 200 200 spc (layer-toggle layers))
 
   ;; layer-switch changes the base layer.
   hal (layer-switch halmak)
@@ -44,7 +44,7 @@
 (deflayer layers
   _    @qwr @hal lrld _    _    _    _    _    _    _    _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _    _    
-  _    _    _    _    _    _    lft  down up   rght _    _    _    _
+  _    _    _    _    _    _    lft  down up   rght _    _    _
   _    _    _    _    _    _    _    _    _    _    _    _
   _    _    _              _              _    _    _
 )
