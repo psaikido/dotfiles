@@ -377,7 +377,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 exec --no-startup-id numlockx on
 
-exec "setxkbmap -option 'grp:alt_space_toggle' -layout gb,halmak,shavian -variant sh21"
+exec "setxkbmap -option 'grp:alt_space_toggle' -layout halmak,gb,shavian -variant sh21"
 
 # start conky:
 # exec_always --no-startup-id ~/bin/conkyh &
