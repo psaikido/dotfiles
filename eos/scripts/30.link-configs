@@ -1,29 +1,93 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-home='/home/psaikido'
+home='/home/hughie'
 cd $home
 
-# git clone https://github.com/psaikido/dotfiles $home/dotfiles
-# git clone git@bitbucket.org/psaikido/bin $home/bin
-# git clone https://gitlab.com/dwt1/wallpapers $home/wallpapers
-
 # dotfiles
-FILE=$home/.bashrc
+FILE=$home/.bash_profile
 if test -f "$FILE"; then
     mv $FILE $FILE.bk
 fi
-ln -s $home/dotfiles/eos/dot-root/bashrc $home/.bashrc
+ln -s $home/dotfiles/eos/dot-root/bash_profile $FILE
 
-FILE=$home/.bash_aliases
+file=$home/.bashrc
+if test -f "$file"; then
+    mv $file $file.bk
+fi
+ln -s $home/dotfiles/eos/dot-root/bashrc $file
+
+FILE=$home/.gitconfig
 if test -f "$FILE"; then
     mv $FILE $FILE.bk
 fi
-ln -s $home/dotfiles/hyprland/config/zsh/aliasrc $home/.bash_aliases
+ln -s $home/dotfiles/eos/dot-root/gitconfig $FILE
 
-FILE=$home/.profile
+FILE=$home/.p10k.zsh
 if test -f "$FILE"; then
     mv $FILE $FILE.bk
 fi
-ln -s $home/dotfiles/eos/dot-root/bash_profile $home/.profile
+ln -s $home/dotfiles/common/p10k.zsh $FILE
+
+FILE=$home/.tmux.conf
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+ln -s $home/dotfiles/common/tmux.conf $FILE
+
+FILE=$home/.xinitrc
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+ln -s $home/dotfiles/eos/dot-root/xinitrc $FILE
+
+FILE=$home/.zshrc
+if test -f "$FILE"; then
+    mv $FILE $FILE.bk
+fi
+ln -s $home/dotfiles/common/zshrc $FILE
 
 
+# .config directories rather than files
+cnf=$home/.config
+
+DIR=$cnf/alacritty
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/eos/config/alacritty $DIR
+
+DIR=$cnf/btop
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/common/btop $DIR
+
+DIR=$cnf/i3
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/eos/config/i3 $DIR
+
+DIR=$cnf/polybar
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/common/polybar $DIR
+
+DIR=$cnf/ranger
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/eos/config/ranger $DIR
+
+DIR=$cnf/redshift
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/common/redshift $DIR
+
+DIR=$cnf/zsh
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/common/zsh $DIR
