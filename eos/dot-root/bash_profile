@@ -51,9 +51,5 @@ fi
 
 #xwallpaper --maximize $HOME/.config/wallpaper.png
 
-# run the remaps script, switching caps/esc and more; check it for more info
-~/.local/bin/remaps
-
 source ~/.bashrc
-
-. "$HOME/.cargo/env"
+#. "$HOME/.cargo/env"
