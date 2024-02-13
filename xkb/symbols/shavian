@@ -1,7 +1,7 @@
 partial alphanumeric_keys
-xkb_symbols "iykury" {
+xkb_symbols "sh2l" {
 
-    name[Group1]= "English (Shavian, Iykury)";
+    name[Group1]= "English (Shavian, Shaw2Layer)";
 
     key <TLDE> { [        grave,     asciitilde ] };
     key <AE01> { [            1,         exclam ] };
@@ -17,39 +17,39 @@ xkb_symbols "iykury" {
     key <AE11> { [        minus,     underscore, emdash,         endash ] };
     key <AE12> { [        equal,           plus ] };
 
-    key <AD01> { [       U10473,         U1046B ] };
-    key <AD02> { [       U10472,         U1046C ] };
-    key <AD03> { [       U1046A,         U10477 ] };
-    key <AD04> { [       U10470,         U1047E ] };
-    key <AD05> { [       U10471,         U1047A ] };
-    key <AD06> { [       U1045F,         U10460 ] };
-    key <AD07> { [       U1045E,         U10454 ] };
-    key <AD08> { [       U10452,         U1045C ] };
-    key <AD09> { [       U10465,         U1046D ] };
-    key <AD10> { [       U1046E,         U10478 ] };
+    key <AD01> { [       U10475,         U1047F ] };
+    key <AD02> { [       U10467,         U10471 ] };
+    key <AD03> { [       U10468,         U10472 ] };
+    key <AD04> { [       U1046D,         U10478 ] };
+    key <AD05> { [       U1046C,         U10476 ] };
+    key <AD06> { [       periodcentered         ] };
+    key <AD07> { [       U1045D,         U10453 ] };
+    key <AD08> { [       U10462,         U10458 ] };
+    key <AD09> { [       U1045E,         U10454 ] };
+    key <AD10> { [       U10463,         U10459 ] };
     key <AD11> { [  bracketleft,      braceleft ] };
     key <AD12> { [ bracketright,     braceright ] };
     key <BKSL> { [    backslash,            bar ] };
 
-    key <AC01> { [       U1047C,         U1047B ] };
-    key <AC02> { [       U10468,         U1047F ] };
-    key <AC03> { [       U10469,         U10475 ] };
-    key <AC04> { [       U10466,         U10474 ] };
-    key <AC05> { [       U10467,         U10479 ] };
-    key <AC06> { [       U10455,         U10456 ] };
-    key <AC07> { [       U1046F,         U10459 ] };
-    key <AC08> { [       U10451,         U10457 ] };
-    key <AC09> { [       U10464,         U10458 ] };
-    key <AC10> { [       U1045B,         U10461 ] };
+    key <AC01> { [       U10464,         U1046E ] };
+    key <AC02> { [       U10466,         U10470 ] };
+    key <AC03> { [       U10469,         U1047E ] };
+    key <AC04> { [       U1046F,         U10465 ] };
+    key <AC05> { [       U10477,         U10479 ] };
+    key <AC06> { [       U10456,         U10460 ] };
+    key <AC07> { [       U10451,         U1045B ] };
+    key <AC08> { [       U10455,         U1045F ] };
+    key <AC09> { [       U10452,         U1045C ] };
+    key <AC10> { [       U10450,         U1045A ] };
     key <AC11> { [   apostrophe,       quotedbl ] };
 
-    key <AB01> { [    semicolon,          colon ] };
-    key <AB02> { [       U10463,          U2E30 ] };
-    key <AB03> { [       U10462, periodcentered ] };
-    key <AB04> { [       U1045D,         U1047D ] };
-    key <AB05> { [       U10453,         U10476 ] };
-    key <AB06> { [       U1045A ] };
-    key <AB07> { [       U10450,          UFE00 ] };
+    key <AB01> { [       U1046A,         U1047A ] };
+    key <AB02> { [       U10473,         U1047B ] };
+    key <AB03> { [       U1047C, 	 U1047D ] };
+    key <AB04> { [       U10474,         U1046B ] };
+    key <AB05> { [       guillemotleft          ] };
+    key <AB06> { [       guillemotright         ] };
+    key <AB07> { [       U10457,         U10461 ] };
     key <AB08> { [        comma,           less,  U2039,  guillemotleft ] };
     key <AB09> { [       period,        greater,  U203A, guillemotright ] };
     key <AB10> { [        slash,       question,  U203D ] };
@@ -170,9 +170,9 @@ xkb_symbols "qwerty" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "sh2l" {
+xkb_symbols "iykury" {
 
-    name[Group1]= "English (Shavian, Shaw2Layer)";
+    name[Group1]= "English (Shavian, Iykury)";
 
     key <TLDE> { [        grave,     asciitilde ] };
     key <AE01> { [            1,         exclam ] };
@@ -190,10 +190,10 @@ xkb_symbols "sh2l" {
 
     key <AD01> { [       U10473,         U1046B ] };
     key <AD02> { [       U10472,         U1046C ] };
-    key <AD03> { [       ,         U10477 ] };
+    key <AD03> { [       U1046A,         U10477 ] };
     key <AD04> { [       U10470,         U1047E ] };
     key <AD05> { [       U10471,         U1047A ] };
-    key <AD06> { [       U1045F,     periodcentered ] };
+    key <AD06> { [       U1045F,         U10460 ] };
     key <AD07> { [       U1045E,         U10454 ] };
     key <AD08> { [       U10452,         U1045C ] };
     key <AD09> { [       U10465,         U1046D ] };
@@ -214,9 +214,9 @@ xkb_symbols "sh2l" {
     key <AC10> { [       U1045B,         U10461 ] };
     key <AC11> { [   apostrophe,       quotedbl ] };
 
-    key <AB01> { [    	 U1046A,         U1047A ] };
-    key <AB02> { [       U10463,         U1047B ] };
-    key <AB03> { [       U1047C,  ] };
+    key <AB01> { [    semicolon,          colon ] };
+    key <AB02> { [       U10463,          U2E30 ] };
+    key <AB03> { [       U10462, periodcentered ] };
     key <AB04> { [       U1045D,         U1047D ] };
     key <AB05> { [       U10453,         U10476 ] };
     key <AB06> { [       U1045A ] };
@@ -225,4 +225,3 @@ xkb_symbols "sh2l" {
     key <AB09> { [       period,        greater,  U203A, guillemotright ] };
     key <AB10> { [        slash,       question,  U203D ] };
 };
-
