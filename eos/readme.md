@@ -24,3 +24,6 @@ crypt
 tmux:
 ln -s dotfiles/eos/dot-root/tmux.conf ~/.tmux.conf
 ln -s dotfiles/eos/configs/tmux ~/.tmux
+
+keyboard:
+follow the readme in dotfiles/xkb
