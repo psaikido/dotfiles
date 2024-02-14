@@ -11,6 +11,7 @@ exa \
 feh \
 fzf \
 gnupg \
+gum \
 btop \
 hugo \
 lazygit \
@@ -26,6 +27,7 @@ npm \
 ntfs-3g \
 pandoc \
 pass \
+polybar \
 python \
 python3 \
 python-pip \
