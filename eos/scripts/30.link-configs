@@ -86,6 +86,12 @@ if test -d "$DIR"; then
 fi
 ln -s $home/dotfiles/common/redshift $DIR
 
+DIR=$cnf/rofi
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/common/rofi $DIR
+
 DIR=$cnf/zsh
 if test -d "$DIR"; then
 	mv $DIR $DIR.bk
