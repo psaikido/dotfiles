@@ -1,8 +1,8 @@
 <layout>
 	<configItem>
-		<name>shavian</name>
-		<shortDescription>sh</shortDescription>
-		<description>English (Shavian)</description>
+		<name>halmak</name>
+		<shortDescription>hmk</shortDescription>
+		<description>English (Halmak)</description>
 		<countryList>
 			<iso3166Id>GB</iso3166Id>
 		</countryList>
@@ -13,9 +13,9 @@
 </layout>
 <layout>
 	<configItem>
-		<name>halmak</name>
-		<shortDescription>hmk</shortDescription>
-		<description>English (Halmak)</description>
+		<name>shavian</name>
+		<shortDescription>sh</shortDescription>
+		<description>English (Shavian)</description>
 		<countryList>
 			<iso3166Id>GB</iso3166Id>
 		</countryList>

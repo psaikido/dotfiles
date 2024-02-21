@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+case "$1" in
+	'halmak')
+		setxkbmap -layout halmak
+	;;
+
+	'qwerty')
+		setxkbmap -layout gb
+	;;
+
+	'shavian')
+		setxkbmap -layout shavian
+	;;
+esac

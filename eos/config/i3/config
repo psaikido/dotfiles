@@ -377,7 +377,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 exec --no-startup-id numlockx on
 
-exec "setxkbmap -option 'grp:alt_space_toggle' -layout halmak,gb,shavian -variant sh21"
+exec "setxkbmap -option 'grp:alt_space_toggle' -layout halmak,gb,shavian"
 
 # start conky:
 # exec_always --no-startup-id ~/bin/conkyh &
@@ -522,8 +522,9 @@ client.urgent		    	$urgentred	$urgentred	$white		$yellowbrown	$yellowbrown
 # 	}
 # }
 
-exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
-# exec_always --no-startup-id redshift
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh 2>$HOME/.config/polybar/log &
+
+exec_always --no-startup-id redshift
 
 # you can add different bars for multidisplay setups on each display:
 # set output HDMI-0 to the display you want the bar, --transparency can be set.
