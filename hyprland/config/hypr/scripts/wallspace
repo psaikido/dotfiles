@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# WALLPAPERS PATH
+# DIR=$HOME/Pictures/wallpapers/theme-i3
+DIR=$HOME/Pictures/wallpapers/theme-hypr
+# DIR=$HOME/Pictures/wallpapers/theme-damo
+
+# Transition config (type swww img --help for more settings
+TYPE="none"
+DURATION=0
+STEP=255
+
+SWWW_PARAMS="--transition-step $STEP --transition-type $TYPE --transition-duration $DURATION"
+
+case "$1" in 
+	--1  )  swww img $SWWW_PARAMS ${DIR}/1.jpg 
+					exit 0
+					;;
+	--2  )  swww img $SWWW_PARAMS ${DIR}/2.jpg
+					exit 0
+					;;
+	--3  )  swww img $SWWW_PARAMS ${DIR}/3.jpg 
+					exit 0               
+					;;                   
+	--4  )  swww img $SWWW_PARAMS ${DIR}/4.jpg 
+					exit 0               
+					;;                   
+	--5  )  swww img $SWWW_PARAMS ${DIR}/5.jpg 
+					exit 0               
+					;;                   
+	--6  )  swww img $SWWW_PARAMS ${DIR}/6.jpg 
+					exit 0               
+					;;                   
+	--7  )  swww img $SWWW_PARAMS ${DIR}/7.jpg 
+					exit 0               
+					;;                   
+	--8  )  swww img $SWWW_PARAMS ${DIR}/8.jpg 
+					exit 0               
+					;;                   
+	--9  )  swww img $SWWW_PARAMS ${DIR}/9.jpg 
+					exit 0
+					;;
+	# --10  )  swww img $SWWW_PARAMS ${DIR}/10.jpg
+	# 				exit 0
+	# 				;;
+	*)   echo -e "\n\tScript arg not known\n"
+				exit 1
+				;;
+esac
+
+exit
+

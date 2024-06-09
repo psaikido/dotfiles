@@ -37,7 +37,7 @@ alias sjc='sudo journalctl'
 alias sp='sudo pacman'
 
 # programs
-alias brave="brave-browser-nightly"
+# alias brave="brave-browser-nightly"
 alias dc="docker-compose"
 alias im="nsxiv"
 alias fx="felix"

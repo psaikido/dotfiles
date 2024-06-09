@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+case "$1" in
+	'lock')
+		#xinput float 14	
+		xinput disable "AT Translated Set 2 keyboard"	
+	;;
+
+	'unlock')
+		#xinput reattach 14 3
+		xinput enable "AT Translated Set 2 keyboard"	
+	;;
+esac
