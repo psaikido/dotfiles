@@ -10,16 +10,19 @@ Start ssh-agent and authenticate.
 eval `ssh-agent`
 ssh-add
 
-git pull the dotfiles dir.
-
-git clone https://github.com/JaKooLit/Arch-Hyprland
+git clone [https://github.com/JaKooLit/Arch-Hyprland](https://github.com/JaKooLit/Arch-Hyprland)
 chmod +x install.sh
 run it
 
-git clone git@github.com:psaikido/neovim ~/.config/nvim
+git pull the dotfiles dir:
+	github	git@github.com:psaikido/dotfiles.git (fetch)
+	github	git@github.com:psaikido/dotfiles.git (push)
+	raspi	git@raspi:~/dotfiles.git (fetch)
+	raspi	git@raspi:~/dotfiles.git (push)
 
-Run:
+Run scripts:
 ~/dotfiles/hyprland/scripts/10.pacman.sh
 ~/dotfiles/hyprland/scripts/20.yay.sh
 ~/dotfiles/hyprland/scripts/30.config.sh
 
+git clone git@github.com:psaikido/neovim ~/.config/nvim

@@ -38,12 +38,28 @@ fi
 ln -s $home/dotfiles/hyprland/config/ranger $home/.config/ranger
 
 
-# rofi
-DIR=$home/.config/rofi
+# waybar
+DIR=$home/.config/waybar
 if test -d "$DIR"; then
 	mv $DIR $DIR.bk
 fi
-ln -s $home/dotfiles/hyprland/config/rofi $home/.config/rofi
+ln -s $home/dotfiles/hyprland/config/waybar $home/.config/waybar
+
+
+# wofi
+DIR=$home/.config/wofi
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/hyprland/config/wofi $home/.config/wofi
+
+
+# wofifull
+DIR=$home/.config/wofifull
+if test -d "$DIR"; then
+	mv $DIR $DIR.bk
+fi
+ln -s $home/dotfiles/hyprland/config/wofifull $home/.config/wofifull
 
 
 # tmux
